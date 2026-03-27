@@ -25,8 +25,8 @@ export default function Contact() {
 
         <p>
           Email:{" "}
-          <a href="mailto:mark@sailscoring.ie" className="text-link">
-            mark@sailscoring.ie
+          <a href="mailto:mark@hyc.ie" className="text-link">
+            mark@hyc.ie
           </a>
         </p>
 
