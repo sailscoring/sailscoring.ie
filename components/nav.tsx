@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Nav() {
   return (
@@ -22,18 +23,14 @@ export default function Nav() {
           justifyContent: "space-between",
         }}
       >
-        <Link
-          href="/"
-          style={{
-            fontSize: 13,
-            fontWeight: 600,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            color: "var(--fg)",
-            textDecoration: "none",
-          }}
-        >
-          Sail Scoring
+        <Link href="/" style={{ display: "flex", alignItems: "center" }}>
+          <Image
+            src="/logo.png"
+            alt="Sail Scoring"
+            width={157}
+            height={36}
+            priority
+          />
         </Link>
 
         <nav style={{ display: "flex", alignItems: "center", gap: 28 }}>
