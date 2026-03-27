@@ -21,10 +21,9 @@ export default function Footer() {
           color: "var(--muted)",
         }}
       >
-        <span>Built by Mark McLoughlin</span>
-        {links.map((link) => (
+        {links.map((link, i) => (
           <span key={link.href} style={{ display: "contents" }}>
-            <span aria-hidden>·</span>
+            {i > 0 && <span aria-hidden>·</span>}
             <Link href={link.href} className="footer-link">
               {link.label}
             </Link>
