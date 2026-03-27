@@ -3,10 +3,6 @@ import Link from "next/link";
 const links = [
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
-  { label: "Terms", href: "/legal/terms" },
-  { label: "Privacy", href: "/legal/privacy" },
-  { label: "Cookies", href: "/legal/cookies" },
-  { label: "Acceptable Use", href: "/legal/acceptable-use" },
 ];
 
 export default function Footer() {
