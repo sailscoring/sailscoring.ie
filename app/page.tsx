@@ -74,8 +74,7 @@ export default function Home() {
           }}
         >
           Sail Scoring is a modern, web-based scoring tool for Irish yacht clubs
-          and class associations. Built to replace ageing desktop software with
-          something that belongs in 2026.
+          and class associations.
         </p>
 
         <div className="anim-fade-up delay-3" style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "center" }}>

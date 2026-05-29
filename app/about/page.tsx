@@ -29,25 +29,25 @@ export default function About() {
             Sailwave
           </a>
           . Sailwave has served the sailing community well for a long time.
-          It is also Windows-only, deliberately opaque to newcomers, and
-          maintained by a single developer. Its long-term future is uncertain.
+          It is also Windows-only, has a steep learning curve, and is built on
+          ageing technology.
         </p>
 
         <p>
-          The consequences of this dependency are real. At Howth Yacht Club, a
-          panel of roughly four volunteers handles all race scoring. At IODAI
-          (the Irish Optimist class), a single scorer manages events with up to
-          200 competitors. In both cases, growing the volunteer base is difficult
-          because of the learning curve. The consequences of losing an
-          experienced scorer — through burnout, a change of circumstances, or
-          simply unavailability on race day — are immediate and disruptive.
+          The consequences of this dependency are real. At many clubs and class
+          associations, scoring rests on a small panel of volunteers — sometimes
+          a single scorer handling events with hundreds of competitors. Growing
+          that volunteer base is difficult because of the learning curve, and the
+          consequences of losing an experienced scorer — through burnout, a
+          change of circumstances, or simply unavailability on race day — are
+          immediate and disruptive.
         </p>
 
         <p>
-          There are web-based alternatives emerging, but they share some of the
-          same concerns: single-maintainer products with limited transparency
-          and uneven coverage of the handicap systems that Irish clubs actually
-          use.
+          There are web-based alternatives emerging, but they typically charge a
+          recurring annual subscription — HalSail, for instance, costs €120 a
+          year. Against a free incumbent like Sailwave, even a modest fee is a
+          real barrier to adoption.
         </p>
 
         <h2>The vision</h2>
@@ -70,8 +70,11 @@ export default function About() {
             withstand scrutiny from competitors and protest committees.
           </li>
           <li>
-            <strong>Sustainable:</strong> The project must be organised so that
-            its long-term viability does not depend on any single individual.
+            <strong>Sustainable:</strong> A club that adopts Sail Scoring is
+            making a long-term investment, and needs confidence that the tool,
+            its data, and the results published from it will still be there in
+            ten or twenty years — in how the project is funded, how it is
+            maintained, and how its data is kept portable.
           </li>
         </ul>
 
@@ -88,8 +91,10 @@ export default function About() {
           The irreplaceable core is <strong>scoring itself</strong>. Given a
           series configuration, a list of competitors, and per-race finishes —
           assign scores, apply discards, and produce standings. This is the
-          hard, rule-governed, trust-requiring part. It is the part that must
-          be bullet-proof.
+          hard, rule-governed, trust-requiring part — especially the many
+          handicap and rating systems clubs rely on, against which scratch
+          scoring is straightforward by comparison. It is the part that must be
+          bullet-proof.
         </p>
 
         <p>
