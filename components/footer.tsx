@@ -23,14 +23,33 @@ export default function Footer() {
           color: "var(--muted)",
         }}
       >
-        {links.map((link, i) => (
+        <Link
+          href="/"
+          aria-label="Sail Scoring — home"
+          style={{
+            display: "inline-flex",
+            alignItems: "center",
+            marginRight: 4,
+          }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/sail-scoring-mark.svg"
+            alt="Sail Scoring"
+            style={{ display: "block", height: 18, width: "auto" }}
+          />
+        </Link>
+        {links.map((link) => (
           <span key={link.href} style={{ display: "contents" }}>
-            {i > 0 && <span aria-hidden>·</span>}
+            <span aria-hidden>·</span>
             <Link href={link.href} className="footer-link">
               {link.label}
             </Link>
           </span>
         ))}
+        <span style={{ marginLeft: "auto" }}>
+          © {new Date().getFullYear()} Sail Scoring™
+        </span>
       </div>
     </footer>
   );
