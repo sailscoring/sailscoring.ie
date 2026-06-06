@@ -27,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={geist.className}>
-        <div style={{ height: 3, backgroundColor: "var(--navy)" }} />
+        <div style={{ height: 3, backgroundColor: "var(--red)" }} />
         <Nav />
         <main>{children}</main>
         <Footer />

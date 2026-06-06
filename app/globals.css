@@ -3,8 +3,12 @@
 :root {
   --bg: #f9f9f7;
   --fg: #111111;
-  --navy: #1a3a5c;
-  --navy-dim: #0f2338;
+  /* Brand navy + racing red (see the branding repo). Navy is primary; red is a
+     sparing accent — kept to the logo and the top hairline, not body text. */
+  --navy: #073358;
+  --navy-dim: #05243e;
+  --red: #fb3a3b;
+  --red-dim: #e02829;
   --muted: #5c5c5c;
   --rule: #ddd8cf;
   --surface: #f0ede8;
