@@ -24,16 +24,19 @@ export default function Nav() {
       >
         <Link
           href="/"
+          aria-label="Sail Scoring — home"
           style={{
-            fontSize: 13,
-            fontWeight: 600,
-            letterSpacing: "0.1em",
-            textTransform: "uppercase",
-            color: "var(--fg)",
+            display: "inline-flex",
+            alignItems: "center",
             textDecoration: "none",
           }}
         >
-          Sail Scoring
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/sail-scoring-wordmark.svg"
+            alt="Sail Scoring"
+            style={{ display: "block", height: 22, width: "auto" }}
+          />
         </Link>
 
         <nav style={{ display: "flex", alignItems: "center", gap: 28 }}>
