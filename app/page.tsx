@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import ScreenshotFlow from "@/components/screenshot-flow";
 
 export const metadata: Metadata = {
   title: "Sail Scoring — Race scoring that anyone can use",
@@ -24,35 +25,6 @@ const features = [
     label: "Sustainable",
     title: "Built to outlast any one volunteer.",
     body: "The goal is a scoring system that clubs can rely on for the long term — not one that disappears when a key volunteer steps back.",
-  },
-];
-
-// The four steps of the scoring → publishing story, illustrated with real
-// captures from the live app (sample data). Mirrors the introduction leaflet.
-const steps = [
-  {
-    n: 1,
-    img: "/screenshots/finish-entry.webp",
-    title: "Enter finishes",
-    body: "Key in the finishing order — or finishing times — straight from the finish sheet, by sail number.",
-  },
-  {
-    n: 2,
-    img: "/screenshots/standings.webp",
-    title: "Standings, instantly",
-    body: "Scores recompute the moment finishes go in — faithful to RRS Appendix A, with IRC, ECHO and PY handicaps.",
-  },
-  {
-    n: 3,
-    img: "/screenshots/preview.webp",
-    title: "Preview, then publish",
-    body: "See the exact published page inside the app, then publish to the web in a single click.",
-  },
-  {
-    n: 4,
-    img: "/screenshots/public-results.webp",
-    title: "Live public results",
-    body: "Anyone can read the results at sailscoring.ie — no app to install, no login required.",
   },
 ];
 
@@ -201,34 +173,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(380px, 1fr))",
-            gap: "48px 40px",
-          }}
-        >
-          {steps.map((s, i) => (
-            <div key={s.n} className={`anim-fade-up delay-${i + 1}`}>
-              <div className="shot-frame">
-                <div className="shot-bar" aria-hidden>
-                  <i />
-                  <i />
-                  <i />
-                </div>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={s.img} alt={s.title} width={1600} height={1000} />
-              </div>
-              <div className="step-head">
-                <span className="step-badge" aria-hidden>
-                  {s.n}
-                </span>
-                <span className="step-title">{s.title}</span>
-              </div>
-              <p className="step-cap">{s.body}</p>
-            </div>
-          ))}
-        </div>
+        <ScreenshotFlow />
 
         <p
           style={{
@@ -239,7 +184,7 @@ export default function Home() {
           }}
         >
           Screenshots from the live app, scored under RRS Appendix A. Sample data
-          shown.
+          shown. Click any screenshot to enlarge.
         </p>
       </section>
 
