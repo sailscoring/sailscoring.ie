@@ -27,13 +27,33 @@ const features = [
   },
 ];
 
-const mockResults = [
-  { pos: 1, boat: "Banshee",      sail: "IRL 35401", r1: "1",   r2: "2",   r3: "1",   r4: "3",   net: 4 },
-  { pos: 2, boat: "Saoirse",      sail: "IRL 28847", r1: "2",   r2: "1",   r3: "4",   r4: "2",   net: 5 },
-  { pos: 3, boat: "Wild Thing",   sail: "IRL 91003", r1: "3",   r2: "3",   r3: "2",   r4: "4",   net: 8 },
-  { pos: 4, boat: "Resolute",     sail: "IRL 37200", r1: "4",   r2: "4",   r3: "3",   r4: "1",   net: 9 },
-  { pos: 5, boat: "Stormbird",    sail: "IRL 44512", r1: "5",   r2: "DNF", r3: "5",   r4: "5",   net: 15 },
-  { pos: 6, boat: "Close Reach",  sail: "IRL 19876", r1: "DNF", r2: "5",   r3: "6",   r4: "6",   net: 17 },
+// The four steps of the scoring → publishing story, illustrated with real
+// captures from the live app (sample data). Mirrors the introduction leaflet.
+const steps = [
+  {
+    n: 1,
+    img: "/screenshots/finish-entry.webp",
+    title: "Enter finishes",
+    body: "Key in the finishing order — or finishing times — straight from the finish sheet, by sail number.",
+  },
+  {
+    n: 2,
+    img: "/screenshots/standings.webp",
+    title: "Standings, instantly",
+    body: "Scores recompute the moment finishes go in — faithful to RRS Appendix A, with IRC, ECHO and PY handicaps.",
+  },
+  {
+    n: 3,
+    img: "/screenshots/preview.webp",
+    title: "Preview, then publish",
+    body: "See the exact published page inside the app, then publish to the web in a single click.",
+  },
+  {
+    n: 4,
+    img: "/screenshots/public-results.webp",
+    title: "Live public results",
+    body: "Anyone can read the results at sailscoring.ie — no app to install, no login required.",
+  },
 ];
 
 export default function Home() {
@@ -147,7 +167,7 @@ export default function Home() {
 
       <hr className="section-rule" />
 
-      {/* Results preview */}
+      {/* How it works — the scoring → publishing story, in real screenshots */}
       <section
         style={{
           maxWidth: 1100,
@@ -155,121 +175,72 @@ export default function Home() {
           padding: "72px 24px",
         }}
       >
+        <div className="anim-fade-up" style={{ marginBottom: 48 }}>
+          <p className="eyebrow">How it works</p>
+          <h2
+            style={{
+              fontSize: "clamp(1.5rem, 3.5vw, 2.2rem)",
+              fontWeight: 700,
+              letterSpacing: "-0.03em",
+              lineHeight: 1.15,
+              marginBottom: 12,
+            }}
+          >
+            From finish sheet to live results.
+          </h2>
+          <p
+            style={{
+              fontSize: 15,
+              lineHeight: 1.65,
+              color: "#3a3a3a",
+              maxWidth: "56ch",
+            }}
+          >
+            A real series, scored end to end — nothing to install, nothing to
+            maintain. Here it is, working.
+          </p>
+        </div>
+
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "1fr",
-            gap: 40,
+            gridTemplateColumns: "repeat(auto-fit, minmax(380px, 1fr))",
+            gap: "48px 40px",
           }}
         >
-          <div className="anim-fade-up">
-            <p className="eyebrow">Results</p>
-            <h2
-              style={{
-                fontSize: "clamp(1.5rem, 3.5vw, 2.2rem)",
-                fontWeight: 700,
-                letterSpacing: "-0.03em",
-                lineHeight: 1.15,
-                marginBottom: 12,
-              }}
-            >
-              Clean results, ready to share.
-            </h2>
-            <p
-              style={{
-                fontSize: 15,
-                lineHeight: 1.65,
-                color: "#3a3a3a",
-                maxWidth: "52ch",
-              }}
-            >
-              Published standings are clear, correct, and available the moment
-              scoring is done — no export, no email, no waiting.
-            </p>
-          </div>
-
-          {/* Mock standings table */}
-          <div
-            className="anim-fade-up delay-2"
-            style={{
-              backgroundColor: "var(--surface)",
-              borderRadius: 8,
-              border: "1px solid var(--rule)",
-              overflow: "hidden",
-            }}
-          >
-            <div
-              style={{
-                padding: "14px 16px",
-                borderBottom: "1px solid var(--rule)",
-                display: "flex",
-                alignItems: "baseline",
-                justifyContent: "space-between",
-              }}
-            >
-              <span
-                style={{
-                  fontSize: 13,
-                  fontWeight: 600,
-                  color: "var(--fg)",
-                }}
-              >
-                HYC Autumn League 2025
-              </span>
-              <span
-                style={{
-                  fontSize: 12,
-                  color: "var(--muted)",
-                }}
-              >
-                IRC Class · 4 races · 1 discard
-              </span>
+          {steps.map((s, i) => (
+            <div key={s.n} className={`anim-fade-up delay-${i + 1}`}>
+              <div className="shot-frame">
+                <div className="shot-bar" aria-hidden>
+                  <i />
+                  <i />
+                  <i />
+                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={s.img} alt={s.title} width={1600} height={1000} />
+              </div>
+              <div className="step-head">
+                <span className="step-badge" aria-hidden>
+                  {s.n}
+                </span>
+                <span className="step-title">{s.title}</span>
+              </div>
+              <p className="step-cap">{s.body}</p>
             </div>
-
-            <div style={{ overflowX: "auto" }}>
-              <table className="results-table">
-                <thead>
-                  <tr>
-                    <th style={{ width: 36 }}>#</th>
-                    <th>Boat</th>
-                    <th>Sail</th>
-                    <th className="num">R1</th>
-                    <th className="num">R2</th>
-                    <th className="num">R3</th>
-                    <th className="num">R4</th>
-                    <th className="num">Net</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {mockResults.map((row) => (
-                    <tr key={row.sail}>
-                      <td className="pos">{row.pos}</td>
-                      <td style={{ fontWeight: 500 }}>{row.boat}</td>
-                      <td style={{ color: "var(--muted)", fontSize: 12 }}>{row.sail}</td>
-                      <td className="num">{row.r1}</td>
-                      <td className="num">{row.r2}</td>
-                      <td className="num">{row.r3}</td>
-                      <td className="num">{row.r4}</td>
-                      <td className="net">{row.net}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-
-            <div
-              style={{
-                padding: "10px 16px",
-                borderTop: "1px solid var(--rule)",
-                fontSize: 11,
-                color: "var(--muted)",
-                fontStyle: "italic",
-              }}
-            >
-              Sample data. Scored under RRS Appendix A Low Point system.
-            </div>
-          </div>
+          ))}
         </div>
+
+        <p
+          style={{
+            marginTop: 36,
+            fontSize: 12,
+            color: "var(--muted)",
+            fontStyle: "italic",
+          }}
+        >
+          Screenshots from the live app, scored under RRS Appendix A. Sample data
+          shown.
+        </p>
       </section>
 
       <hr className="section-rule" />
