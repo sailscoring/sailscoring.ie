@@ -139,61 +139,77 @@ body {
   margin-bottom: 12px;
 }
 
-/* Results table */
-.results-table {
+/* Product screenshots — the "how it works" flow on the home page. A light
+   browser-chrome frame around each capture, matching the introduction leaflet's
+   visual language (navy shadow, dotted bar, red step badge). */
+.shot-frame {
+  border-radius: 8px;
+  border: 1px solid var(--rule);
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(7, 51, 88, 0.12);
+}
+
+.shot-bar {
+  height: 26px;
+  background: #eef3f7;
+  border-bottom: 1px solid #e2e9ef;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+}
+
+.shot-bar i {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #cdd8e2;
+}
+
+/* The capture itself, cropped to a consistent landscape window (top-aligned so
+   the page header and first rows always show). */
+.shot-frame img {
+  display: block;
   width: 100%;
-  border-collapse: collapse;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.step-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 8px;
+}
+
+.step-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--bg);
   font-size: 13px;
-}
-
-.results-table thead th {
-  font-size: 11px;
   font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--muted);
-  text-align: left;
-  padding: 8px 12px;
-  border-bottom: 1px solid var(--rule);
 }
 
-.results-table thead th.num {
-  text-align: right;
-}
-
-.results-table tbody td {
-  padding: 10px 12px;
-  border-bottom: 1px solid var(--surface-2);
-  color: var(--fg);
-  vertical-align: middle;
-}
-
-.results-table tbody td.num {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-  color: var(--muted);
-}
-
-.results-table tbody td.pos {
+.step-title {
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--fg);
-  width: 40px;
-  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.02em;
+  color: var(--navy);
 }
 
-.results-table tbody td.net {
-  font-weight: 600;
-  color: var(--fg);
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-.results-table tbody tr:last-child td {
-  border-bottom: none;
-}
-
-.results-table tbody tr:hover td {
-  background-color: var(--surface);
+.step-cap {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #3a3a3a;
 }
 
 /* Prose for About/legal pages */
