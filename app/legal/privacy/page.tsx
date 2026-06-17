@@ -19,7 +19,7 @@ export default function Privacy() {
         <h1>Privacy Policy</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 28 May 2026
+          Last updated: 17 June 2026
         </p>
 
         <p>
@@ -68,8 +68,20 @@ export default function Privacy() {
           Workspaces contain race data: competitor names, sail numbers, club
           affiliations, handicap ratings, finish times, results, and the
           published standings that follow. This is, in practice, the same
-          information that has been pinned to club notice boards and shared on
-          club websites for decades.
+          information that clubs and class associations have long posted to
+          the web, where it is already openly accessible.
+        </p>
+
+        <p>
+          Where a workspace enables it, recurring competitors can be linked
+          into a single persistent profile, so that a sailor&apos;s results
+          across different series sit together rather than scattered across
+          separate regattas. Published results may then be surfaced as a
+          public per-competitor timeline and a searchable index of competitors
+          by name and sail number. These views draw only on results the
+          workspace has already published — nothing unpublished appears in
+          them. The workspace owner decides whether to enable this and what to
+          publish.
         </p>
 
         <p>
