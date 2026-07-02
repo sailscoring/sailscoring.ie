@@ -43,6 +43,9 @@ export default function Nav() {
           <Link href="/about" className="nav-link">
             About
           </Link>
+          <Link href="/faq" className="nav-link">
+            FAQ
+          </Link>
           <Link href="/contact" className="nav-link">
             Contact
           </Link>
