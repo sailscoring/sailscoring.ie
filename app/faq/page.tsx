@@ -40,6 +40,27 @@ export default function FAQ() {
           Irish Sailing, with other regions potentially to follow.
         </p>
 
+        <h2>Is it open source?</h2>
+
+        <p>
+          Yes. The application, including the scoring engine, is open source
+          under the MIT licence, developed in the open on{" "}
+          <a
+            href="https://github.com/sailscoring/sailscoring"
+            className="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          . This is a deliberate part of the sustainability story: anyone can
+          audit how a score is calculated, and the tool can outlive any single
+          maintainer or hosting arrangement, because in the worst case the code
+          can be picked up and run by someone else. The &quot;Sail Scoring&quot;
+          name and logo remain trademarks, so a fork can run the software but
+          not pass itself off as this service.
+        </p>
+
         <h2>
           How is this different from Sailwave or HalSail — why switch?
         </h2>

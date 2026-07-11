@@ -105,6 +105,28 @@ export default function About() {
           handicap points compound across a series.
         </p>
 
+        <h2>Open source</h2>
+
+        <p>
+          Sail Scoring is <strong>open source</strong>, released under the MIT
+          licence and developed in the open on{" "}
+          <a
+            href="https://github.com/sailscoring/sailscoring"
+            className="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            GitHub
+          </a>
+          . That is a sustainability decision before it is anything else: a
+          club adopting a scoring tool is investing years of training and data
+          in it, and open source is the strongest guarantee available that the
+          tool can outlive any one person or hosting arrangement — in the worst
+          case, the code can simply be picked up and run by someone else. It
+          also means anyone can audit exactly how a score is calculated, which
+          is the kind of transparency scoring software should offer.
+        </p>
+
         <h2>Who is behind it</h2>
 
         <p>

@@ -18,8 +18,8 @@ const features = [
   },
   {
     label: "Open",
-    title: "Your data, always.",
-    body: "Your data stays yours. Export at any time, in standard formats. No lock-in, no ransom, no dependency on a single commercial product.",
+    title: "Open data, open source.",
+    body: "Your data stays yours — export at any time, in standard formats. And the code is open source under the MIT licence: no lock-in, no ransom, no single point of failure.",
   },
   {
     label: "Sustainable",
