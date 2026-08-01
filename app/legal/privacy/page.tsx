@@ -19,7 +19,7 @@ export default function Privacy() {
         <h1>Privacy Policy</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 17 June 2026
+          Last updated: 1 August 2026
         </p>
 
         <p>
@@ -96,6 +96,22 @@ export default function Privacy() {
           wants their data corrected or removed, the right starting point is
           the club; if you are unable to reach the club, contact us and we
           will help.
+        </p>
+
+        <h3>Race officials</h3>
+
+        <p>
+          A workspace can also record the race management team &mdash; the
+          names of the people who ran an event or an individual race, each with
+          a World Sailing role such as Race Officer or Recorder. These are
+          named individuals who are not competitors, so recording a team and
+          publishing one are separate steps: nothing about the race management
+          team appears on a published results page, or in the data export
+          attached to it, unless the scorer turns on publishing for that series.
+          It is off by default. As with competitor data, the workspace owner is
+          the controller and decides what to publish; a person named as an
+          official who wants that changed should start with the club, and we
+          will help if the club cannot be reached.
         </p>
 
         <h3>Club FTP credentials</h3>
