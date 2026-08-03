@@ -19,7 +19,7 @@ export default function Privacy() {
         <h1>Privacy Policy</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 1 August 2026
+          Last updated: 3 August 2026
         </p>
 
         <p>
@@ -96,6 +96,24 @@ export default function Privacy() {
           wants their data corrected or removed, the right starting point is
           the club; if you are unable to reach the club, contact us and we
           will help.
+        </p>
+
+        <h3>World Sailing Sailor IDs</h3>
+
+        <p>
+          Events sailed under international notices of race require each
+          competitor to hold a World Sailing Sailor ID &mdash; a public
+          identifier tied to that sailor&apos;s World Sailing profile. Where a
+          workspace enables it, a series can record the ID of the primary
+          sailor on each entry: stored with the rest of that competitor&apos;s
+          record, shown on published results as a link to their World Sailing
+          biography, and included in the data export attached to a published
+          page. A scorer can also use it for two things they start by hand
+          &mdash; matching an organising authority&apos;s seeding list to the
+          entry list, where we keep the resulting seeding position and not the
+          ranking document, and checking the recorded IDs against World
+          Sailing&apos;s datafeed, where we read the name and nationality
+          returned and store neither.
         </p>
 
         <h3>Race officials</h3>
@@ -201,6 +219,13 @@ export default function Privacy() {
         <p>
           If we add, remove, or substantially change a sub-processor we will
           update this page.
+        </p>
+
+        <p>
+          <strong>World Sailing is not a sub-processor</strong>: nothing is
+          hosted with or processed by them on our behalf. We query their
+          public register when a scorer runs the Sailor ID check above, and
+          keep none of what comes back.
         </p>
 
         <h2>How long we keep it</h2>
