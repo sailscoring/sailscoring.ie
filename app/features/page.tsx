@@ -4,7 +4,7 @@ import FeatureShot from "@/components/feature-shot";
 export const metadata: Metadata = {
   title: "Sail Scoring — Features",
   description:
-    "What Sail Scoring does: running a series, entering results, scoring correctly, rating systems, and publishing — shown with real screenshots from the live app.",
+    "What Sail Scoring does, end to end: running a series, entering results, scoring correctly, rating systems, publishing, and the open data underneath — with real screenshots from the live app.",
 };
 
 /**
@@ -17,7 +17,8 @@ export const metadata: Metadata = {
  * Screenshots come from `pnpm feature-shots` in the app repo, which writes
  * WebPs straight into public/screenshots/features/. A feature without a
  * `shot` renders as prose alone. `note` renders as a small marker line —
- * used for optional features a workspace switches on.
+ * used for optional features a workspace switches on, and for the
+ * operator-managed ones offered on request.
  */
 type Feature = {
   id: string;
@@ -37,6 +38,7 @@ type Group = {
 
 const OPTIONAL_NOTE =
   "Optional feature — switched on per workspace under Workspace settings.";
+const ON_REQUEST_NOTE = "Available on request — get in touch and we'll set it up.";
 
 const groups: Group[] = [
   {
@@ -49,7 +51,7 @@ const groups: Group[] = [
       {
         id: "series-list",
         title: "A home for every series",
-        body: "The workspace home groups series under your own categories, in your own order, with recent activity shown under each — so a club running five leagues and a regatta a season still finds everything at a glance. Finished seasons archive to a read-only section, safe from stray edits.",
+        body: "The workspace home groups series under your own categories, in your own order, with recent activity shown under each — so a club running five leagues and a regatta a season still finds everything at a glance.",
         shot: {
           src: "/screenshots/features/series-list.webp",
           alt: "The series list, grouped by category",
@@ -65,12 +67,40 @@ const groups: Group[] = [
         },
       },
       {
+        id: "archive-trash",
+        title: "Finished seasons, kept safe",
+        body: "Archiving makes a finished series read-only, filed by year at the foot of the list — a safeguard against a stray edit months later. Deleting takes two deliberate steps and even then is soft: a trashed series stays recoverable for thirty days.",
+        shot: {
+          src: "/screenshots/features/archive-trash.webp",
+          alt: "The archived and trash sections of the series list",
+        },
+      },
+      {
         id: "competitor-list",
         title: "An entry list that fits your racing",
         body: "Every entry needs just a sail number and a name. Everything else is optional and per series: boat, class, owner, helm, crew, club, nationality, bow numbers, and prize-giving divisions. Enable only the fields your racing uses and the forms stay small.",
         shot: {
           src: "/screenshots/features/competitor-list.webp",
           alt: "The competitors tab of a club series",
+        },
+      },
+      {
+        id: "multi-person-fields",
+        title: "Boats with more than one name",
+        body: "Co-owned boats, offshore co-helms, and full keelboat crews are first-class: any person field can hold as many names as the boat carries, and exports keep the classic Helm / Crew line for the simple case.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/multi-person-fields.webp",
+          alt: "A competitor with a full crew list",
+        },
+      },
+      {
+        id: "bulk-cleanup",
+        title: "Tidy the whole list in one pass",
+        body: "Filter, select, and set a field on thirty entries at once — with suggestions from values already in use, so near-misses like HYC versus Howth YC are easy to unify. Find duplicates groups suspect entries, including sail-number changes, for review and one-click merge.",
+        shot: {
+          src: "/screenshots/features/bulk-cleanup.webp",
+          alt: "Setting a field across a selection of competitors",
         },
       },
       {
@@ -92,12 +122,31 @@ const groups: Group[] = [
         },
       },
       {
+        id: "race-starts",
+        title: "Only the fleets that raced",
+        body: "A race's recorded starts say which fleets sailed it, so finish entry, check-in, and automatic DNCs cover only the boats actually racing — no wading through the whole entry list, no clearing phantom DNCs for a class that stayed ashore.",
+        shot: {
+          src: "/screenshots/features/race-starts.webp",
+          alt: "The race starts editor",
+        },
+      },
+      {
         id: "add-races-bulk",
         title: "A season of races in one go",
         body: "Add races one at a time, or generate a whole weekly or fortnightly run from a single dialog — pick the first date, say how many, and check the previewed dates before anything is created. Postpone, rename, or slot in a re-sail later without disturbing the scoring.",
         shot: {
           src: "/screenshots/features/add-races-bulk.webp",
           alt: "The add-multiple-races dialog with its date preview",
+        },
+      },
+      {
+        id: "race-management",
+        title: "The race, on the record",
+        body: "Record what a race was sailed in — wind range and direction, the course, the tide — and who ran it, using World Sailing's race-management roles. Officials' names are never published unless you explicitly say so.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/race-management.webp",
+          alt: "The race record dialog: conditions and management team",
         },
       },
       {
@@ -121,13 +170,23 @@ const groups: Group[] = [
         },
       },
       {
-        id: "race-management",
-        title: "The race, on the record",
-        body: "Record what a race was sailed in — wind range and direction, the course, the tide — and who ran it, using World Sailing's race-management roles. Officials' names are never published unless you explicitly say so.",
+        id: "split-fleets",
+        title: "Qualifying fleets, finals, medal races",
+        body: "Big one-design championships split the entry into qualifying fleets re-dealt from the standings each morning, then Gold and Silver finals — the format behind ILCA and Optimist majors. A guided tab runs the whole event: seeded initial assignment, daily re-deals, combined interleaved finish sheets, catch-up races, the final split, and a medal race — and it reads your configuration back as sailing-instruction prose so you can check it against the SIs you were given.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/split-fleets.webp",
+          alt: "The split-fleets tab of a championship",
+        },
+      },
+      {
+        id: "world-sailing-id",
+        title: "World Sailing Sailor IDs",
+        body: "Record each sailor's World Sailing ID, import an organising authority's seeding list matched on it — the only identifier that survives chartered boats — and verify every ID against World Sailing's own datafeed, where a mismatch is what catches two transposed digits on an entry form.",
         note: OPTIONAL_NOTE,
         shot: {
-          src: "/screenshots/features/race-management.webp",
-          alt: "The race record dialog: conditions and management team",
+          src: "/screenshots/features/world-sailing-id.webp",
+          alt: "A competitor's World Sailing ID field",
         },
       },
     ],
@@ -139,6 +198,15 @@ const groups: Group[] = [
     intro:
       "Result entry is built around how finishes actually arrive: a handwritten sheet, a busy finish line, and a scorer who wants to be done before the bar closes.",
     features: [
+      {
+        id: "finish-entry",
+        title: "The finish sheet, typed as it comes",
+        body: "Row order is crossing order, a sail number commits the moment it's unambiguous, and timed fleets prompt for a finish time as you go. A whole fleet's finish goes in as fast as you can read the sheet.",
+        shot: {
+          src: "/screenshots/features/finish-entry.webp",
+          alt: "The finish entry screen mid-race",
+        },
+      },
       {
         id: "result-codes",
         title: "Every result code, scored correctly",
@@ -155,6 +223,15 @@ const groups: Group[] = [
         shot: {
           src: "/screenshots/features/unknown-sail.webp",
           alt: "Recording an unregistered sail number as unknown",
+        },
+      },
+      {
+        id: "tied-finishes",
+        title: "Ties, per the rules",
+        body: "Two boats crossing together share averaged points with one tick, and series ties break automatically per RRS A8 — best scores first, then the last race. Nobody re-derives a tie-break at the prize-giving.",
+        shot: {
+          src: "/screenshots/features/tied-finishes.webp",
+          alt: "Two finishers marked as tied",
         },
       },
       {
@@ -194,6 +271,15 @@ const groups: Group[] = [
           alt: "The finish-sheet import preview",
         },
       },
+      {
+        id: "keyboard-shortcuts",
+        title: "Fast hands welcome",
+        body: "Every page-level action has a keyboard shortcut and ? opens the reference, so a practised scorer runs a race day without touching the mouse.",
+        shot: {
+          src: "/screenshots/features/keyboard-shortcuts.webp",
+          alt: "The keyboard shortcut reference",
+        },
+      },
     ],
   },
   {
@@ -204,12 +290,36 @@ const groups: Group[] = [
       "Scoring software earns trust through correctness. Low Point scoring, discards, tie-breaking, and the odd corners of Appendix A are the engine's job — and every edit recomputes everything, instantly.",
     features: [
       {
+        id: "low-point",
+        title: "Low Point, recomputed instantly",
+        body: "Series score to RRS Appendix A Low Point, and every edit — a late protest decision, a corrected finish time, a reinstated boat — recomputes standings, discards, ties, and progressive handicaps the moment it lands. There is no recalculate button because there is nothing stale to recalculate.",
+      },
+      {
         id: "discard-rules",
         title: "Discards as the SIs state them",
         body: "Write the discard schedule the way the sailing instructions do — with five races sailed, exclude one; with nine, exclude two — and the standings apply it automatically as the series grows. Rules that look wrong are flagged but never forbidden: sometimes the unusual profile is exactly what the SI says.",
         shot: {
           src: "/screenshots/features/discard-rules.webp",
           alt: "The scoring card with discard rules configured",
+        },
+      },
+      {
+        id: "proportional-discards",
+        title: "Discards as a proportion",
+        body: "Long-series SIs often say it differently — one discard for every three races sailed. State it as exactly that, and the card reads back where the allowance steps up, which is the check you actually make against the sailing instruction.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/proportional-discards.webp",
+          alt: "A proportional discard rule with its step-up readback",
+        },
+      },
+      {
+        id: "a53-scoring",
+        title: "Penalties sized to the turnout",
+        body: "Clubs with variable attendance score DNF and OCS on the boats that came to the start, not the season's whole entry — RRS A5.3, one checkbox, including the variant that scores DNC that way too.",
+        shot: {
+          src: "/screenshots/features/a53-scoring.webp",
+          alt: "The A5.3 starting-area scoring options",
         },
       },
       {
@@ -232,12 +342,30 @@ const groups: Group[] = [
       "Scratch, IRC, ECHO, Portsmouth Yardstick, RYA NHC — with ratings pulled from the published lists instead of typed from them, and progressive handicaps you can verify with a calculator.",
     features: [
       {
+        id: "scratch-results",
+        title: "Scratch, for one-designs",
+        body: "First across the line wins. Position-based scoring for one-design fleets and anyone racing on equal terms — clean race tables with no corrected-time noise.",
+        shot: {
+          src: "/screenshots/features/scratch-results.webp",
+          alt: "A one-design fleet's race results",
+        },
+      },
+      {
         id: "update-handicaps-irc",
-        title: "Ratings from the source",
-        body: "Pull IRC TCCs straight from the worldwide rating list, ECHO from Irish Sailing, PY numbers from the RYA's list, or carry everything forward from last season's series — always as a previewed set of current → new changes you approve boat by boat, never a blind overwrite.",
+        title: "IRC, from the worldwide list",
+        body: "Pull TCCs straight from the IRC rating list — matched by sail number, spinnaker or non-spinnaker per fleet, dual certificates handled — always as a previewed set of current → new changes you approve boat by boat, never a blind overwrite.",
         shot: {
           src: "/screenshots/features/update-handicaps-irc.webp",
           alt: "Update handicaps from the IRC rating list, previewed",
+        },
+      },
+      {
+        id: "update-handicaps-echo",
+        title: "ECHO, from Irish Sailing",
+        body: "The Irish progressive handicap comes from its authority: pull each boat's ECHO straight from the national Irish Sailing list, previewed the same way. Portsmouth Yardstick numbers come per class from the bundled RYA list, with guide-only numbers flagged.",
+        shot: {
+          src: "/screenshots/features/update-handicaps-echo.webp",
+          alt: "Update handicaps from the Irish Sailing ECHO list",
         },
       },
       {
@@ -249,6 +377,17 @@ const groups: Group[] = [
           alt: "A published ECHO page with rating calculations revealed",
         },
       },
+      {
+        id: "carry-handicaps",
+        title: "Carried forward, season to season",
+        body: "When a new series starts, carry every boat's handicap forward from the last one — end-of-series values for progressive systems, current ratings for static ones — with a full preview, and a proper answer to the mid-series certificate change: keep already-scored races on the old rating, or re-score everything to correct a mistake.",
+      },
+      {
+        id: "more-systems",
+        title: "NHC and VPRS too",
+        body: "The RYA National Handicap for Cruisers runs on the standard parameters with per-fleet overrides for tuning experiments, and VPRS scoring pulls TCCs from the club's published list — both there when your racing needs them.",
+        note: OPTIONAL_NOTE,
+      },
     ],
   },
   {
@@ -258,6 +397,24 @@ const groups: Group[] = [
     intro:
       "Standings a sailor can read at the noticeboard, and a record behind them that stands up to a protest committee.",
     features: [
+      {
+        id: "standings",
+        title: "Standings a sailor can read",
+        body: "Total and nett, struck-through discards, podium badges on the series and on every race, and distinct styling for coded, penalised, and redress scores — the answer to who's winning and why, at a glance.",
+        shot: {
+          src: "/screenshots/features/standings.webp",
+          alt: "The standings tab of a club series",
+        },
+      },
+      {
+        id: "preview",
+        title: "See exactly what goes public",
+        body: "Preview renders the precise published page inside the app before anything goes out — and downloads it as self-contained HTML or a print-tuned PDF for the noticeboard.",
+        shot: {
+          src: "/screenshots/features/preview.webp",
+          alt: "The in-app preview of the published page",
+        },
+      },
       {
         id: "race-exclusion",
         title: "Strike a race for one fleet",
@@ -295,6 +452,15 @@ const groups: Group[] = [
         },
       },
       {
+        id: "public-results-page",
+        title: "The page your sailors see",
+        body: "Clean, readable results pages that need no sign-in and load anywhere — the standings up top, every race's full table below, branded with your club and event.",
+        shot: {
+          src: "/screenshots/features/public-results-page.webp",
+          alt: "A published fleet results page",
+        },
+      },
+      {
         id: "publication-tree",
         title: "A results site that organises itself",
         body: "Every published page slots into your club's public index — events grouped by season, each with its results tables linked right on its row, with navigation on every page to move between classes, events, and seasons. It updates itself every time you publish. No webmaster required.",
@@ -302,6 +468,21 @@ const groups: Group[] = [
           src: "/screenshots/features/publication-tree.webp",
           alt: "A workspace's public results index, grouped by season",
         },
+      },
+      {
+        id: "combined-pages",
+        title: "One page for the whole event",
+        body: "Publish several fleets as sections of a single page — an all-fleets Overall page so a multi-class event has one link to hand out, or one class page covering every method it's scored under, optionally replacing the per-fleet pages entirely.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/combined-pages.webp",
+          alt: "A combined overall page with several fleets",
+        },
+      },
+      {
+        id: "flexible-publishing",
+        title: "Events of every shape",
+        body: "Several series can publish into one event folder — the cruisers and the one-designs of the same regatta, each publishing independently. And a one-race trophy publishes as just the race table, not a one-column standings page pretending to be a series.",
       },
       {
         id: "results-status-final",
@@ -322,6 +503,15 @@ const groups: Group[] = [
           alt: "The published-pages listing for a workspace",
         },
       },
+      {
+        id: "logo-library",
+        title: "Branding without the file hunt",
+        body: "A shared workspace library of venue, club, class, and sponsor logos — plus a built-in set of official marks — with workspace defaults, so published pages come out branded without anyone hunting for image files. Update a logo once and every page using it follows.",
+        shot: {
+          src: "/screenshots/features/logo-library.webp",
+          alt: "The logo picker with the built-in collection",
+        },
+      },
     ],
   },
   {
@@ -339,6 +529,71 @@ const groups: Group[] = [
           src: "/screenshots/features/competitor-import.webp",
           alt: "The competitor import column-mapping dialog",
         },
+      },
+      {
+        id: "sailwave-import",
+        title: "Coming from Sailwave? Bring everything",
+        body: "Import a Sailwave .blw file whole — fleets, competitors, ratings, results, prize divisions — previewed before anything is created. Or keep scoring in Sailwave and use Sail Scoring as the publishing front end, refreshing from a new export whenever you like.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/sailwave-import.webp",
+          alt: "The Sailwave import wizard preview",
+        },
+      },
+      {
+        id: "series-actions",
+        title: "A series is a file, when you need one",
+        body: "Save any series as a single .sailscoring file — competitors, races, results, and its full version history — to back it up, email it, or move it between workspaces. Re-importing recognises the series and updates it, warning if the two copies have diverged.",
+        shot: {
+          src: "/screenshots/features/series-actions.webp",
+          alt: "The series actions menu: save, update, duplicate, copy",
+        },
+      },
+      {
+        id: "open-in-sailscoring",
+        title: "Every results page carries its data",
+        body: "Published pages embed a machine-readable snapshot of the results, and an Open in Sail Scoring link imports the whole series into any account in one click — so the data behind a results page is never more than one link from usable.",
+        shot: {
+          src: "/screenshots/features/open-in-sailscoring.webp",
+          alt: "The published-page footer with Open in Sail Scoring",
+        },
+      },
+      {
+        id: "rrs-push",
+        title: "One entry list, shared with the jury",
+        body: "Push the competitor list to a racingrulesofsailing.org event for protests and hearing schedules — with contact details relayed from your spreadsheet and never stored.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/rrs-push.webp",
+          alt: "Pushing the entry list to rrs.org",
+        },
+      },
+    ],
+  },
+  {
+    id: "across-series",
+    label: "Across series and seasons",
+    heading: "Beyond the single series.",
+    intro:
+      "For classes and clubs with history: the layer that connects seasons of results into careers, ladders, and archives. These run on infrastructure we enable per workspace — ask us.",
+    features: [
+      {
+        id: "competitor-identity",
+        title: "Every sailor's career, connected",
+        body: "Entries across seasons resolve into recurring competitors, each with a public timeline of every series sailed — third of 48 at the Nationals, year by year — and a searchable index of everyone who has raced, so \"who sailed 1605?\" has an answer.",
+        note: ON_REQUEST_NOTE,
+      },
+      {
+        id: "rankings",
+        title: "Season ladders across events",
+        body: "Best-N rankings computed over the series you choose — a championship plus the best two regionals, participation floors, nationality and fleet filters, committee adjustments with footnotes — published as a public ladder that updates as results land.",
+        note: ON_REQUEST_NOTE,
+      },
+      {
+        id: "archives",
+        title: "Decades of results, preserved",
+        body: "A club's historical results can be brought in exactly as they were originally published — display-only, never re-scored — so the archive lives alongside the current season under the same index, and a sailor's timeline reaches back through it.",
+        note: ON_REQUEST_NOTE,
       },
     ],
   },
@@ -359,6 +614,20 @@ const groups: Group[] = [
         },
       },
       {
+        id: "workspace-request",
+        title: "A workspace for the panel",
+        body: "Request a shared club workspace from your account page and it arrives with you as owner, ready to invite the rest of the panel by email — with owner, admin, and view-only roles so a class captain can watch without the risk of a stray edit.",
+        shot: {
+          src: "/screenshots/features/workspace-request.webp",
+          alt: "Requesting a shared workspace",
+        },
+      },
+      {
+        id: "live-co-scoring",
+        title: "Several scorers, one series",
+        body: "The whole panel sees edits in close to real time, typically split by fleet. Nothing locks; instead every change is attributed, and if two scorers touch the same finish at the same moment, the second sees a conflict prompt naming the first — never a silent overwrite.",
+      },
+      {
         id: "feature-toggles",
         title: "Only the features you use",
         body: "Optional features switch on and off per workspace, so a dinghy club never sees IRC machinery and a keelboat panel never sees youth-regatta tooling. Several arrive with a worked example seeded into your series list, ready to explore and delete.",
@@ -366,6 +635,44 @@ const groups: Group[] = [
           src: "/screenshots/features/feature-toggles.webp",
           alt: "The workspace features card",
         },
+      },
+      {
+        id: "send-feedback",
+        title: "A direct line to the builder",
+        body: "Send a bug report or a suggestion from inside the app, with the page and browser context attached automatically — and shown to you before it goes.",
+        shot: {
+          src: "/screenshots/features/send-feedback.webp",
+          alt: "The send-feedback dialog",
+        },
+      },
+    ],
+  },
+  {
+    id: "for-the-technical",
+    label: "For the technical",
+    heading: "Open, underneath.",
+    intro:
+      "For clubs with a developer on the committee — and for anyone who wants to know their results outlive any one tool.",
+    features: [
+      {
+        id: "api",
+        title: "A real API",
+        body: "A keyed public REST API covers series, competitors, races, results, and publishing — the same surface the app itself uses, so anything the app can do, a script can do.",
+      },
+      {
+        id: "cli",
+        title: "Scriptable from the terminal",
+        body: "The sailscoring command-line tool drives the API for bulk import, publishing, and reads — season automation without anyone touching a database.",
+      },
+      {
+        id: "open-source",
+        title: "MIT-licensed, developed in the open",
+        body: "The application is open source under the MIT licence. No vendor to disappear, no ransom for your own scoring system — if it matters to your club, you can read exactly how every score is computed.",
+      },
+      {
+        id: "open-data",
+        title: "Your data, always yours",
+        body: "Export any series as a documented file at any time, and every published page embeds its results as data. Leaving is a download, not a negotiation — which is precisely why you won't need to.",
       },
     ],
   },
@@ -401,8 +708,8 @@ export default function Features() {
           }}
         >
           Sail Scoring covers the whole of a scorer&rsquo;s season — setting up,
-          scoring, and publishing. A tour of the essentials, with more of the
-          deep end being added to this page over time.
+          scoring, publishing, and everything after. The full tour, from the
+          everyday to the deep end.
         </p>
         <nav
           className="anim-fade-up delay-3"
