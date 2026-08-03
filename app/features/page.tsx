@@ -242,8 +242,8 @@ const groups: Group[] = [
       },
       {
         id: "scoring-penalties",
-        title: "Penalties that finish the arithmetic",
-        body: "ZFP, SCP, and discretionary DPI penalties are applied from the finisher's row and scored per RRS 44.3(c) and A6.2 — the percentage, the rounding, the DNF cap — with the penalised score shown in amber wherever it appears.",
+        title: "ZFP, SCP, and DPI penalties",
+        body: "A boat penalised after a hearing keeps her finish and takes the points: ZFP, SCP, and discretionary DPI penalties are applied from the finisher's row and scored per RRS 44.3(c) and A6.2 — the percentage, the rounding, the DNF cap — with the penalised score shown in amber wherever it appears.",
         shot: {
           src: "/screenshots/features/scoring-penalties.webp",
           alt: "The scoring-penalty editor on a finisher",
