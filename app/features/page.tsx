@@ -19,6 +19,12 @@ export const metadata: Metadata = {
  * `shot` renders as prose alone. `note` renders as a small marker line —
  * used for optional features a workspace switches on, and for the
  * operator-managed ones offered on request.
+ *
+ * Every feature `id` (and group `id`) is a shareable deep link —
+ * /features#redress goes straight to that entry, offset below the sticky
+ * header and highlighted. Treat the ids like published URLs: once this page
+ * is live they are in scorers' inboxes, so rename features without renaming
+ * ids, and leave a duplicated id behind if an entry must move groups.
  */
 type Feature = {
   id: string;
@@ -739,7 +745,12 @@ export default function Features() {
           <hr className="section-rule" />
           <section
             id={group.id}
-            style={{ maxWidth: 1100, margin: "0 auto", padding: "64px 24px" }}
+            style={{
+              maxWidth: 1100,
+              margin: "0 auto",
+              padding: "64px 24px",
+              scrollMarginTop: 76,
+            }}
           >
             <div style={{ marginBottom: 48 }}>
               <p className="eyebrow">{group.label}</p>
@@ -771,6 +782,7 @@ export default function Features() {
                 <div
                   key={f.id}
                   id={f.id}
+                  className="feature-row"
                   style={{
                     display: "grid",
                     gridTemplateColumns: f.shot
@@ -791,7 +803,16 @@ export default function Features() {
                         color: "var(--navy)",
                       }}
                     >
-                      {f.title}
+                      <a
+                        href={`#${f.id}`}
+                        className="anchor-heading"
+                        aria-label={`Link to ${f.title}`}
+                      >
+                        {f.title}
+                        <span className="hash" aria-hidden>
+                          #
+                        </span>
+                      </a>
                     </h3>
                     <p style={{ fontSize: 14.5, lineHeight: 1.7, color: "#3a3a3a" }}>
                       {f.body}

@@ -396,3 +396,36 @@ body {
   border-top: 1px solid var(--rule);
   margin: 0;
 }
+
+/* Deep-linkable feature entries (/features#<id>). Anchors scroll to land
+   clear of the sticky header; each heading carries a hover-revealed # for
+   copying its link; and the entry a shared URL points at is tinted so the
+   recipient sees exactly which one was meant. */
+.feature-row {
+  scroll-margin-top: 76px;
+}
+
+.anchor-heading {
+  color: inherit;
+  text-decoration: none;
+}
+
+.anchor-heading .hash {
+  margin-left: 8px;
+  font-weight: 400;
+  color: var(--muted);
+  opacity: 0;
+  transition: opacity 0.12s;
+}
+
+.anchor-heading:hover .hash,
+.anchor-heading:focus-visible .hash {
+  opacity: 1;
+}
+
+.feature-row:target {
+  background: rgba(7, 51, 88, 0.045);
+  border-radius: 10px;
+  padding: 20px;
+  margin: -20px;
+}
