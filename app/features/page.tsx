@@ -91,6 +91,24 @@ const groups: Group[] = [
         },
       },
       {
+        id: "alternative-sail-numbers",
+        title: "Boats that change sails mid-event",
+        body: "A replacement sail after damage, a borrowed one, a charter picked up on day two — list the other numbers a boat may show and finish entry recognises all of them. The result lands on the right boat, and the series records which sail it actually raced under, while standings and published pages keep showing the number it entered with.",
+        shot: {
+          src: "/screenshots/features/alternative-sail-numbers.webp",
+          alt: "Alternative sail numbers listed against an entry",
+        },
+      },
+      {
+        id: "competitor-sorting",
+        title: "Sorted the way you read numbers",
+        body: "Sail number 7 belongs at the top of the list, not below 217236 — numbers sort as numbers here, grouped by national letters. Click any column to sort by it instead, and hold shift to stack up to three: nationality, then gender, then sail number, for pulling clubmates or a run of similar boats together.",
+        shot: {
+          src: "/screenshots/features/competitor-sorting.webp",
+          alt: "The competitors list sorted by club and then sail number",
+        },
+      },
+      {
         id: "multi-person-fields",
         title: "Boats with more than one name",
         body: "Co-owned boats, offshore co-helms, and full keelboat crews are first-class: any person field can hold as many names as the boat carries, and exports keep the classic Helm / Crew line for the simple case.",
