@@ -504,6 +504,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "per-division-pages",
+        title: "Gold, Silver and Bronze, side by side",
+        body: "A class that races as one fleet but awards prizes by division can publish both: the overall standings, and a table per division with each ranked among its own boats. Same racing, same scores — the second page is how the prize-giving reads, and it's the page a class will ask you for.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/per-division-pages.webp",
+          alt: "A published page with a standings table per division",
+        },
+      },
+      {
         id: "flexible-publishing",
         title: "Events of every shape",
         body: "Several series can publish into one event folder — the cruisers and the one-designs of the same regatta, each publishing independently. And a one-race trophy publishes as just the race table, not a one-column standings page pretending to be a series.",
