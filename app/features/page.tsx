@@ -671,6 +671,15 @@ const groups: Group[] = [
         },
       },
       {
+        id: "help-panel",
+        title: "Help without losing your place",
+        body: "Look something up and the guidance opens in a panel beside the screen you're on — already showing the section that covers it — so the advice and the thing it describes are in front of you together. Slide it out of the way and back, and it returns to the same paragraph.",
+        shot: {
+          src: "/screenshots/features/help-panel.webp",
+          alt: "Help open beside a series' standings",
+        },
+      },
+      {
         id: "send-feedback",
         title: "A direct line to the builder",
         body: "Send a bug report or a suggestion from inside the app, with the page and browser context attached automatically — and shown to you before it goes.",
