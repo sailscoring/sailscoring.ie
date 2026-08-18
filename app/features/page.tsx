@@ -206,7 +206,7 @@ const groups: Group[] = [
       {
         id: "world-sailing-id",
         title: "World Sailing Sailor IDs",
-        body: "Record each sailor's World Sailing ID, import an organising authority's seeding list matched on it — the only identifier that survives chartered boats — and verify every ID against World Sailing's own datafeed, where a mismatch is what catches two transposed digits on an entry form.",
+        body: "Record each sailor's World Sailing ID — the only identifier that survives chartered boats — carry an organising authority's seed ranking on the entry list that decides the first day's qualifying fleets, and verify every ID against World Sailing's own datafeed, where a mismatch is what catches two transposed digits on an entry form.",
         note: OPTIONAL_NOTE,
         shot: {
           src: "/screenshots/features/world-sailing-id.webp",
