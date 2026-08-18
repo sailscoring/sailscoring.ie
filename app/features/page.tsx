@@ -558,10 +558,19 @@ const groups: Group[] = [
       {
         id: "competitor-import",
         title: "Entry lists straight from the spreadsheet",
-        body: "Import competitors from CSV or Excel with per-column mapping and live samples of what each column holds. Fleets can be inferred from the rating columns, multi-fleet boats declared in one cell, and a boat that changed sail number between imports is caught instead of duplicated.",
+        body: "Import competitors from CSV or Excel with per-column mapping and live samples of what each column holds. Multi-fleet boats are declared in one cell, and a boat that changed sail number between imports is caught instead of duplicated.",
         shot: {
           src: "/screenshots/features/competitor-import.webp",
           alt: "The competitor import column-mapping dialog",
+        },
+      },
+      {
+        id: "fleet-planning-import",
+        title: "Fleets you can change your mind about",
+        body: "The import settles fleets first, before the columns: choose what splits the boats, see the fleets your rating columns imply, then rename them, decide who is in each, or add one the spreadsheet never mentioned — an IRC fleet whose certificates haven't arrived yet. When they do arrive, the rating list offers to trim that fleet to the boats it actually rates.",
+        shot: {
+          src: "/screenshots/features/fleet-planning-import.webp",
+          alt: "The importer's Fleets step, with an IRC fleet per class",
         },
       },
       {
