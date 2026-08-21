@@ -296,6 +296,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "racesense-import",
+        title: "Straight off the committee boat",
+        body: "If your race committee runs Vakaros RaceSense, the day's racing comes back as one workbook and goes in as one upload. Every sheet is matched to its race and marked new, unchanged, or differing — so a whole day lands in a click, races you already entered confirm themselves, and a correction you made by hand is never quietly overwritten. Boats over the line keep their OCS, which the finish list on its own would have lost.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/racesense-import.webp",
+          alt: "The RaceSense import listing a workbook's races",
+        },
+      },
+      {
         id: "keyboard-shortcuts",
         title: "Fast hands welcome",
         body: "Every page-level action has a keyboard shortcut and ? opens the reference, so a practised scorer runs a race day without touching the mouse.",
