@@ -417,6 +417,12 @@ const groups: Group[] = [
         body: "When a new series starts, carry every boat's handicap forward from the last one — end-of-series values for progressive systems, current ratings for static ones — with a full preview, and a proper answer to the mid-series certificate change: keep already-scored races on the old rating, or re-score everything to correct a mistake.",
       },
       {
+        id: "orc-pcs",
+        title: "ORC, curves and all",
+        body: "Import whole ORC certificates straight from the ORC database and score them any way the certificate allows — the all-purpose single number, time-on-distance over the recorded course, or full performance-curve scoring over a constructed course, with the implied wind, scoring wind, and every allowance published so competitors can check the result from their own certificate. No other club scoring tool does performance curves.",
+        note: ON_REQUEST_NOTE,
+      },
+      {
         id: "more-systems",
         title: "NHC and VPRS too",
         body: "The RYA National Handicap for Cruisers runs on the standard parameters with per-fleet overrides for tuning experiments, and VPRS scoring pulls TCCs from the club's published list — both there when your racing needs them.",
