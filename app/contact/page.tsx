@@ -39,9 +39,11 @@ export default function Contact() {
             paddingTop: 24,
           }}
         >
-          Sail Scoring is currently in stealth beta. If you&apos;re a scorer or
-          club official interested in early access, mention that — the more
-          specific the better.
+          Sail Scoring is generally available to clubs and class associations
+          in Ireland. If you&apos;re a scorer or club official interested in
+          getting set up, mention that — the more specific the better. Outside
+          Ireland? You&apos;re welcome to trial the software using a personal
+          workspace, and feedback is always appreciated.
         </p>
       </div>
     </section>

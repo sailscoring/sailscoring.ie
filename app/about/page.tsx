@@ -138,12 +138,14 @@ export default function About() {
         </p>
 
         <p>
-          The project is currently in stealth beta, being tested with a small
-          number of clubs and class associations before any wider release.
+          The project is generally available to clubs and class associations
+          in Ireland. Outside Ireland, individuals are encouraged to trial the
+          software using a personal workspace and send feedback.
         </p>
 
         <p>
-          Questions, feedback, or interest in being an early adopter:{" "}
+          Questions, feedback, or interest in bringing your club or class on
+          board:{" "}
           <a href="/contact" className="text-link">
             get in touch
           </a>

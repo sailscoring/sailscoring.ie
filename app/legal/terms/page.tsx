@@ -19,7 +19,7 @@ export default function Terms() {
         <h1>Terms of Service</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 28 May 2026
+          Last updated: 26 August 2026
         </p>
 
         <p>
@@ -50,13 +50,15 @@ export default function Terms() {
           operated by Mark McLoughlin, based in Ireland.
         </p>
 
-        <h2>Beta status</h2>
+        <h2>Service status</h2>
 
         <p>
-          Sail Scoring is currently in stealth beta. Features are added,
-          changed, and occasionally removed. We test thoroughly and avoid
-          breaking things people rely on, but the service is pre-1.0 and you
-          should treat it accordingly: keep your own export of any data that
+          Sail Scoring is generally available to clubs and class associations
+          in Ireland. Outside Ireland, individuals are encouraged to trial the
+          software using a personal workspace and send feedback. The service
+          is actively developed: features are added, changed, and occasionally
+          removed. We test thoroughly and avoid breaking things people rely
+          on, but you should still keep your own export of any data that
           matters to you, and tell us promptly if something is wrong.
         </p>
 

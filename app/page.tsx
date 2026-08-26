@@ -225,8 +225,8 @@ export default function Home() {
               marginBottom: 32,
             }}
           >
-            Sail Scoring is free to use during the current beta. Sign up in a
-            minute and your events sync securely across every device.
+            Sail Scoring is free to use. Sign up in a minute and your events
+            sync securely across every device.
           </p>
           <a
             href="https://app.sailscoring.ie"

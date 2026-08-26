@@ -36,8 +36,9 @@ export default function FAQ() {
           any number of Burgee Sponsors — clubs, classes, and supporters of the
           project — cover the modest cost of running the service, so scorers and
           competitors never see a bill. Individuals can use it free too. It is
-          currently in beta and focused on Irish clubs and classes recognised by
-          Irish Sailing, with other regions potentially to follow.
+          generally available to Irish clubs and classes recognised by Irish
+          Sailing; outside Ireland, individuals are encouraged to trial the
+          software using a personal workspace and send feedback.
         </p>
 
         <h2>Is it open source?</h2>
