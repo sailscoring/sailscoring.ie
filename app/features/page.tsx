@@ -298,7 +298,7 @@ const groups: Group[] = [
       {
         id: "racesense-import",
         title: "Straight off the committee boat",
-        body: "If your race committee runs Vakaros RaceSense, the day's racing comes back as one workbook and goes in as one upload. Every sheet is matched to its race and marked new, unchanged, or differing — so a whole day lands in a click, races you already entered confirm themselves, and a correction you made by hand is never quietly overwritten. Boats over the line keep their OCS, which the finish list on its own would have lost.",
+        body: "If your race committee runs Vakaros RaceSense, the day's racing comes back as one workbook and goes in as one upload. Every sheet is matched to its race and marked new, unchanged, or differing — so a whole day lands in a click, races you already entered confirm themselves, and a correction you made by hand is never quietly overwritten. Boats over the line keep their OCS, which the finish list on its own would have lost. The tracker's story comes along too: finish and elapsed times, distance sailed, average and max speed, and each boat's distance to the line at the gun can publish as sortable columns on the per-race results — your call, off by default.",
         note: ON_REQUEST_NOTE,
         shot: {
           src: "/screenshots/features/racesense-import.webp",
