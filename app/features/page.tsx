@@ -421,6 +421,10 @@ const groups: Group[] = [
         title: "ORC, curves and all",
         body: "Import whole ORC certificates straight from the ORC database and score them any way the certificate allows — the all-purpose single number, time-on-distance over the recorded course, or full performance-curve scoring over a constructed course, with the implied wind, scoring wind, and every allowance published so competitors can check the result from their own certificate. No other club scoring tool does performance curves.",
         note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/orc.webp",
+          alt: "A published ORC performance-curve race: the scoring-wind audit header, implied winds, and the constructed course's legs",
+        },
       },
       {
         id: "more-systems",
