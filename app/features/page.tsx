@@ -440,7 +440,7 @@ const groups: Group[] = [
       {
         id: "standings",
         title: "Standings a sailor can read",
-        body: "Total and nett, struck-through discards, podium badges on the series and on every race, and distinct styling for coded, penalised, and redress scores — the answer to who's winning and why, at a glance.",
+        body: "Total and nett, struck-through discards, podium badges on the series and on every race, and distinct styling for coded, penalised, and redress scores — the answer to who's winning and why, at a glance. Sort by any column — even a single race's scores — and every boat keeps its series rank.",
         shot: {
           src: "/screenshots/features/standings.webp",
           alt: "The standings tab of a club series",
@@ -494,7 +494,7 @@ const groups: Group[] = [
       {
         id: "public-results-page",
         title: "The page your sailors see",
-        body: "Clean, readable results pages that need no sign-in and load anywhere — the standings up top, every race's full table below, branded with your club and event.",
+        body: "Clean, readable results pages that need no sign-in and load anywhere — the standings up top, every race's full table below, branded with your club and event. Visitors can sort any table by any column — nationality, sail number, a single race — while print and PDF keep the official rank order.",
         shot: {
           src: "/screenshots/features/public-results-page.webp",
           alt: "A published fleet results page",
