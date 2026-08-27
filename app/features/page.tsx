@@ -286,9 +286,18 @@ const groups: Group[] = [
         },
       },
       {
+        id: "elapsed-times",
+        title: "Or off a stopwatch",
+        body: "Not every finish boat works off the ship's clock. Plenty start a stopwatch on the gun and write down how long each boat took — so set the race to elapsed times and the column takes durations exactly as they're written. Handicap correction and the protest time limit come out the same either way; the app does the arithmetic you'd otherwise be doing on the back of the sheet.",
+        shot: {
+          src: "/screenshots/features/elapsed-times.webp",
+          alt: "Choosing between times of day and elapsed times on a finish sheet",
+        },
+      },
+      {
         id: "finish-sheet-import",
         title: "Import the whole sheet",
-        body: "When finishes are captured in a spreadsheet on the water, import the race in one go — sail numbers, times, result codes, row order as crossing order — with a preview of exactly what will land before anything is replaced.",
+        body: "When finishes are captured in a spreadsheet on the water, import the race in one go — sail numbers, finish or elapsed times, result codes, row order as crossing order — with a preview of exactly what will land before anything is replaced.",
         note: OPTIONAL_NOTE,
         shot: {
           src: "/screenshots/features/finish-sheet-import.webp",
@@ -298,7 +307,7 @@ const groups: Group[] = [
       {
         id: "racesense-import",
         title: "Straight off the committee boat",
-        body: "If your race committee runs Vakaros RaceSense, the day's racing comes back as one workbook and goes in as one upload. Every sheet is matched to its race and marked new, unchanged, or differing — so a whole day lands in a click, races you already entered confirm themselves, and a correction you made by hand is never quietly overwritten. Boats over the line keep their OCS, which the finish list on its own would have lost. The tracker's story comes along too: finish and elapsed times, distance sailed, average and max speed, and each boat's distance to the line at the gun can publish as sortable columns on the per-race results — your call, off by default.",
+        body: "If your race committee runs Vakaros RaceSense, the day's racing comes back as one workbook and goes in as one upload. Every sheet is matched to its race and marked new, unchanged, or differing — so a whole day lands in a click, races you already entered confirm themselves, and a correction you made by hand is never quietly overwritten. Boats over the line keep their OCS, which the finish list on its own would have lost. Each boat comes in on the elapsed time the tracker actually measured, and if the timestamp beside it disagrees the import says so by name rather than taking it on trust. The rest of the tracker's story comes along too: distance sailed, average and max speed, and each boat's distance to the line at the gun can publish as sortable columns on the per-race results — your call, off by default.",
         note: ON_REQUEST_NOTE,
         shot: {
           src: "/screenshots/features/racesense-import.webp",
