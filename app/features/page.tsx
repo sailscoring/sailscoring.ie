@@ -623,11 +623,20 @@ const groups: Group[] = [
       },
       {
         id: "open-in-sailscoring",
-        title: "Every results page carries its data",
-        body: "Published pages embed a machine-readable snapshot of the results, and an Open in Sail Scoring link imports the whole series into any account in one click — so the data behind a results page is never more than one link from usable.",
+        title: "Anyone can open your results and see how they were scored",
+        body: "Every published page carries a link that opens the whole event in Sail Scoring — no account, nothing to install. Readers get the entry list, the racing, the standings, and the scoring setup behind them, read-only. A competitor who wants to try a different rating or a what-if finish time saves a copy to their own workspace and plays there, without touching yours. No other scoring package will show you this much.",
+        shot: {
+          src: "/screenshots/features/spectator-view.webp",
+          alt: "A published event opened read-only in the app, with a button to save a copy",
+        },
+      },
+      {
+        id: "results-data-file",
+        title: "The data behind every page, as a file",
+        body: "Publishing puts the results data itself beside the pages as a documented .sailscoring.json file — every boat, race, finish and rating that produced the standings, linked from every footer and free for anyone to fetch. Club sites, class statisticians, and anyone with an idea can build on it, and it carries only what you published.",
         shot: {
           src: "/screenshots/features/open-in-sailscoring.webp",
-          alt: "The published-page footer with Open in Sail Scoring",
+          alt: "The published-page footer carrying its Open in Sail Scoring and data links",
         },
       },
       {
