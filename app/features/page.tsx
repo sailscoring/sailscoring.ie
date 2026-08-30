@@ -635,8 +635,8 @@ const groups: Group[] = [
         title: "The data behind every page, as a file",
         body: "Publishing puts the results data itself beside the pages as a documented .sailscoring.json file — every boat, race, finish and rating that produced the standings, linked from every footer and free for anyone to fetch. Club sites, class statisticians, and anyone with an idea can build on it, and it carries only what you published.",
         shot: {
-          src: "/screenshots/features/open-in-sailscoring.webp",
-          alt: "The published-page footer carrying its Open in Sail Scoring and data links",
+          src: "/screenshots/features/results-data-file.webp",
+          alt: "The published-page footer linking the results data file",
         },
       },
       {
