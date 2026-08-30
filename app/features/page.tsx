@@ -624,7 +624,7 @@ const groups: Group[] = [
       {
         id: "open-in-sailscoring",
         title: "Anyone can open your results and see how they were scored",
-        body: "Every published page carries a link that opens the whole event in Sail Scoring — no account, nothing to install. Readers get the entry list, the racing, the standings, and the scoring setup behind them, read-only. A competitor who wants to try a different rating or a what-if finish time saves a copy to their own workspace and plays there, without touching yours. No other scoring package will show you this much.",
+        body: "Every published page carries a link that opens the whole event in Sail Scoring — no account, nothing to install. Readers get the entry list, the racing down to each race's finish times, the standings, and the scoring setup behind them, read-only. A competitor who wants to try a different rating or a what-if finish time saves a copy to their own workspace and plays there, without touching yours. No other scoring package will show you this much.",
         shot: {
           src: "/screenshots/features/spectator-view.webp",
           alt: "A published event opened read-only in the app, with a button to save a copy",
