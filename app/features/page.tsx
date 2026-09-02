@@ -709,6 +709,11 @@ const groups: Group[] = [
         body: "The whole panel sees edits in close to real time, typically split by fleet. Nothing locks; instead every change is attributed, and if two scorers touch the same finish at the same moment, the second sees a conflict prompt naming the first — never a silent overwrite.",
       },
       {
+        id: "workspace-activity",
+        title: "Who did what, across the workspace",
+        body: "One Activity tab shows the whole workspace's log, newest first — every series' changes, and the things that happen to the workspace itself — each attributed to a scorer and linked to its series. It is the record a panel keeps each other honest with, and the one to point at if a result is ever questioned.",
+      },
+      {
         id: "feature-toggles",
         title: "Only the features you use",
         body: "Optional features switch on and off per workspace, so a dinghy club never sees IRC machinery and a keelboat panel never sees youth-regatta tooling. Several arrive with a worked example seeded into your series list, ready to explore and delete.",
