@@ -712,6 +712,10 @@ const groups: Group[] = [
         id: "workspace-activity",
         title: "Who did what, across the workspace",
         body: "One Activity tab shows the whole workspace's log, newest first — every series' changes, and the things that happen to the workspace itself — each attributed to a scorer and linked to its series. It is the record a panel keeps each other honest with, and the one to point at if a result is ever questioned.",
+        shot: {
+          src: "/screenshots/features/workspace-activity.webp",
+          alt: "The workspace Activity tab",
+        },
       },
       {
         id: "feature-toggles",
