@@ -19,7 +19,7 @@ export default function Privacy() {
         <h1>Privacy Policy</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 3 August 2026
+          Last updated: 2 September 2026
         </p>
 
         <p>
@@ -153,6 +153,24 @@ export default function Privacy() {
           honest about who changed what. The lawful basis is our and the
           workspace&apos;s legitimate interest in an auditable record of
           changes.
+        </p>
+
+        <h3>Support access</h3>
+
+        <p>
+          When you ask us for help with a series, we may need to look at it.
+          Where a file or a published link does not answer the question, the
+          maintainer can join your workspace as a read-only member for a
+          limited time &mdash; 24 hours unless a longer or shorter period is
+          agreed &mdash; and only in response to your request. Both the join
+          and the end of that access are written to your workspace&apos;s
+          activity log with the reason, so every member of the workspace can
+          see who was there, when, and why. Access ends automatically when the
+          time is up. We do not hold standing access to any workspace: the
+          workspace owner remains the controller of its data, and this is us
+          acting on the owner&apos;s instruction as processor. If you would
+          rather we did not join your workspace, say so when you ask for help
+          and we will work from what you send us instead.
         </p>
 
         <h2>Cookies</h2>
