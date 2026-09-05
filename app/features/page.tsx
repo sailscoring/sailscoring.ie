@@ -552,6 +552,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "starters-checklist",
+        title: "The entry list, before race one — and on the committee boat",
+        body: "Publish the entry list as soon as it settles, weeks before there is a result to read. The same page prints as a starters checklist for the race team: one table per start, sail numbers set large enough to read on a moving boat, and a box beside each to tick as it arrives in the starting area. Anyone with the link can print it — no account needed.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/starters-checklist.webp",
+          alt: "A printed starters checklist: three class tables with tick boxes",
+        },
+      },
+      {
         id: "flexible-publishing",
         title: "Events of every shape",
         body: "Several series can publish into one event folder — the cruisers and the one-designs of the same regatta, each publishing independently. And a one-race trophy publishes as just the race table, not a one-column standings page pretending to be a series.",
