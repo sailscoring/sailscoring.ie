@@ -109,6 +109,15 @@ const groups: Group[] = [
         },
       },
       {
+        id: "excluded-competitors",
+        title: "A long list, a shorter entry",
+        body: "Import the whole class register or last season's fleet, then tick Excluded on the boats that haven't entered. They stay on the list but are not entrants: scored nowhere, on no published page, and left out of the count that DNC points come from — exactly as Sailwave's Exclude works, and imported with it. When one of them turns up on the water, the finish sheet offers to include it as you type its number. Or let the series do it: rank only boats that took part, and any boat with no result yet is out until it sails.",
+        shot: {
+          src: "/screenshots/features/excluded-competitors.webp",
+          alt: "The competitors list with one boat excluded and the header counting it",
+        },
+      },
+      {
         id: "multi-person-fields",
         title: "Boats with more than one name",
         body: "Co-owned boats, offshore co-helms, and full keelboat crews are first-class: any person field can hold as many names as the boat carries, and exports keep the classic Helm / Crew line for the simple case.",
