@@ -572,6 +572,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "page-notes",
+        title: "Say the thing the figures can't",
+        body: "Sometimes a results page needs a sentence. The race was abandoned and resailed. The finish order was corrected at 16:40. Tuesday's fleet split was worked out before a retirement was applied, so it doesn't reconcile with today's standings — and that's correct, because the sailors raced to the posted assignment. Write a note on any page, or one that goes on every page of the event, and it prints above the results where a reader will actually see it, links and all.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/page-notes.webp",
+          alt: "A published page with a scorer's note above the results",
+        },
+      },
+      {
         id: "flexible-publishing",
         title: "Events of every shape",
         body: "Several series can publish into one event folder — the cruisers and the one-designs of the same regatta, each publishing independently. And a one-race trophy publishes as just the race table, not a one-column standings page pretending to be a series.",
