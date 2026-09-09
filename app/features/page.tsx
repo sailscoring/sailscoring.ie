@@ -652,6 +652,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "sailwave-export",
+        title: "Sailwave stays your safety net",
+        body: "Worried about depending on an app on the day it matters? Export any series to a Sailwave .blw at any moment — fleets and ratings, entries, starts, finishes and codes, the discard profile — open it in Sailwave and score on. Sailwave re-scores from the inputs, and anything it cannot carry is listed before you download.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/sailwave-export.webp",
+          alt: "The Export to Sailwave dialog listing what the Sailwave copy will not carry",
+        },
+      },
+      {
         id: "series-actions",
         title: "A series is a file, when you need one",
         body: "Save any series as a single .sailscoring file — competitors, races, results, and its full version history — to back it up, email it, or move it between workspaces. Re-importing recognises the series and updates it, warning if the two copies have diverged.",
