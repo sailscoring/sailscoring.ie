@@ -84,7 +84,7 @@ const groups: Group[] = [
       {
         id: "competitor-list",
         title: "An entry list that fits your racing",
-        body: "Every entry needs just a sail number and a name. Everything else is optional and per series: boat, class, owner, helm, crew, club, nationality, bow numbers, and prize-giving divisions. Enable only the fields your racing uses and the forms stay small.",
+        body: "Every entry needs just a sail number and a name. Everything else is optional and per series: boat, class, owner, helm, crew, club, nationality, bow numbers, and prize-giving divisions. Enable only the fields your racing uses and the forms stay small. A boat can hold two clubs, so the Club and Other Club columns on an Irish entry list both survive the import — and both appear on the results.",
         shot: {
           src: "/screenshots/features/competitor-list.webp",
           alt: "The competitors tab of a club series",
