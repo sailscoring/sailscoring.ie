@@ -635,7 +635,7 @@ const groups: Group[] = [
       {
         id: "fleet-planning-import",
         title: "Fleets you can change your mind about",
-        body: "The import settles fleets first, before the columns: choose what splits the boats, see the fleets your rating columns imply, then rename them, decide who is in each, or add one the spreadsheet never mentioned — an IRC fleet whose certificates haven't arrived yet. When they do arrive, the rating list offers to trim that fleet to the boats it actually rates.",
+        body: "The import settles fleets first, before the columns: choose what splits the boats, see the fleets your rating columns imply, then rename them, decide who is in each, or add one the spreadsheet never mentioned — an IRC fleet whose certificates haven't arrived yet. An entry list can't say who holds a certificate, so the import ends where that becomes knowable: it tells you how many boats in that fleet still have no rating, and offers to fetch the rating list on the spot — filling in the ratings it holds, and offering the boats it doesn't rate for removal from the fleet. Take the offer and nothing is left flagged; skip it and the same list is there whenever the certificates are.",
         shot: {
           src: "/screenshots/features/fleet-planning-import.webp",
           alt: "The importer's Fleets step, with an IRC fleet per class",
