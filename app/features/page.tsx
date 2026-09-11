@@ -533,6 +533,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "ftp-upload",
+        title: "Or straight onto the club's own website",
+        body: "Already have a results page on your club's site? Publish to it instead. The same dialog uploads over FTP or FTPS, with a remote path per page — each class, each extra page, the entry list — so results land exactly where your members already look for them, under your own domain, in the file names your site already uses. Tick the pages you want to send; the rest stay as they are.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/ftp-upload.webp",
+          alt: "The publish dialog uploading to a club's own web server, a path per page",
+        },
+      },
+      {
         id: "public-results-page",
         title: "The page your sailors see",
         body: "Clean, readable results pages that need no sign-in and load anywhere — the standings up top, every race's full table below, branded with your club and event. Visitors can sort any table by any column — nationality, sail number, a single race — while print and PDF keep the official rank order.",
