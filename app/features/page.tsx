@@ -435,6 +435,15 @@ const groups: Group[] = [
         body: "When a new series starts, carry every boat's handicap forward from the last one — end-of-series values for progressive systems, current ratings for static ones — with a full preview, and a proper answer to the mid-series certificate change: keep already-scored races on the old rating, or re-score everything to correct a mistake.",
       },
       {
+        id: "fixed-tcf",
+        title: "Your club's own handicap, by its own name",
+        body: "Plenty of club racing is scored on numbers the club sets itself and holds for the series. Score a fleet on a fixed handicap, call it what your club calls it — Howth's is HPH — and that word heads the rating column everywhere, including the published page. Set the numbers from the end of last season's progressive series in one step, and if the committee re-rates a boat mid-league, the races already sailed keep the rating they were sailed under.",
+        shot: {
+          src: "/screenshots/features/fixed-tcf.webp",
+          alt: "A fleet scored on a fixed club handicap, called HPH",
+        },
+      },
+      {
         id: "orc-pcs",
         title: "ORC, curves and all",
         body: "Import whole ORC certificates straight from the ORC database and score them any way the certificate allows — the all-purpose single number, time-on-distance over the recorded course, or full performance-curve scoring over a constructed course, with the implied wind, scoring wind, and every allowance published so competitors can check the result from their own certificate. No other club scoring tool does performance curves.",
