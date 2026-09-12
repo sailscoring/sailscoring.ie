@@ -454,6 +454,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "orc-handicap-mix",
+        title: "Where the handicap came from",
+        body: "An ORC certificate is a matrix — an allowance in seconds per mile at every wind speed and every angle to the wind — and every way of scoring it is a weighted mix of those cells. A published performance-curve race folds the mix away beside the course: the wind speeds across the top, the legs actually sailed down the side, and in each cell the share of the rating it carried. A competitor can see that half their windward/leeward rating was the beat and half the run, or which leg of Sunday's course did the damage. No other scoring tool publishes it, because no other scoring tool scores on curves at all.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/orc-handicap-mix.webp",
+          alt: "The handicap mix opened under a published race: the certificate's wind speeds across the top, one row per leg, and the share of the rating in each cell",
+        },
+      },
+      {
         id: "course-builder",
         title: "Courses from the card, not the calculator",
         body: "Build an ORC constructed course the way the race committee describes it: the club's charted marks come straight from its course card, the line and the laid windward mark go in as coordinates or as a bearing and distance off the line, and a course is a number on the card. A race start picks the course and its legs fill in at the day's wind; every dialog draws the course as you type, so a dropped digit shows before it scores, and the published page carries the drawing.",
