@@ -492,6 +492,12 @@ body {
   border-bottom: 1px solid var(--rule);
 }
 
+/* The burgee's anchor is the flex child; without this the image is free to be
+   squeezed by a long sponsor description beside it. */
+.sponsor-row > a {
+  flex: 0 0 auto;
+}
+
 .sponsor-row .burgee {
   height: 72px;
   max-width: 104px;

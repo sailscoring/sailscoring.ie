@@ -13,6 +13,10 @@ export const metadata: Metadata = {
     "The clubs and classes whose sponsorship keeps Sail Scoring free for the people who do the scoring.",
 };
 
+/** Small counts read better spelled out in running prose than as numerals.
+ *  Only ever needs to reach the number of Founding slots. */
+const SLOT_WORDS: Record<number, string> = { 2: "two", 3: "three" };
+
 function SponsorRow({ sponsor }: { sponsor: Sponsor }) {
   return (
     <div className="sponsor-row">
@@ -107,7 +111,9 @@ export default function Supporters() {
           {foundingSlotsRemaining > 0 ? (
             <>
               There are three Founding Sponsor places for the 2026 season and{" "}
-              {foundingSlotsRemaining === 1 ? "one is" : `${foundingSlotsRemaining} are`}{" "}
+              {foundingSlotsRemaining === 1
+                ? "one is"
+                : `${SLOT_WORDS[foundingSlotsRemaining] ?? foundingSlotsRemaining} are`}{" "}
               still open. Burgee sponsorship is open to any number of clubs,
               classes, and supporters.{" "}
             </>
