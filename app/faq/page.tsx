@@ -35,7 +35,11 @@ export default function FAQ() {
           Scoring is funded by sponsors: a small number of Founding Sponsors and
           any number of Burgee Sponsors — clubs, classes, and supporters of the
           project — cover the modest cost of running the service, so scorers and
-          competitors never see a bill. Individuals can use it free too. It is
+          competitors never see a bill.{" "}
+          <a href="/supporters" className="text-link">
+            Howth Yacht Club
+          </a>{" "}
+          is the first Founding Sponsor. Individuals can use it free too. It is
           generally available to Irish clubs and classes recognised by Irish
           Sailing; outside Ireland, individuals are encouraged to trial the
           software using a personal workspace and send feedback.

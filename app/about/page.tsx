@@ -138,6 +138,19 @@ export default function About() {
         </p>
 
         <p>
+          Howth Yacht Club is also the project&apos;s first{" "}
+          <a href="/supporters" className="text-link">
+            Founding Sponsor
+          </a>
+          , covering a share of what the service costs to run. Worth stating
+          plainly rather than leaving to be discovered: the founder is a member
+          of the club that funds it. Sponsorship buys recognition and a working
+          relationship — a voice in what gets built next, alongside every other
+          club&apos;s. It does not buy private features, and it has no bearing
+          on how a race is scored.
+        </p>
+
+        <p>
           The project is generally available to clubs and class associations
           in Ireland. Outside Ireland, individuals are encouraged to trial the
           software using a personal workspace and send feedback.

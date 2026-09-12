@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ScreenshotFlow from "@/components/screenshot-flow";
+import SupportedBy from "@/components/supported-by";
 
 export const metadata: Metadata = {
   title: "Sail Scoring — Race scoring that anyone can use",
@@ -136,6 +137,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <hr className="section-rule" />
+
+      <SupportedBy />
 
       <hr className="section-rule" />
 
