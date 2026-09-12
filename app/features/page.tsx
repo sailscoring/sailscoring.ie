@@ -456,11 +456,11 @@ const groups: Group[] = [
       {
         id: "orc-handicap-mix",
         title: "Where the handicap came from",
-        body: "An ORC certificate is a matrix — an allowance in seconds per mile at every wind speed and every angle to the wind — and every way of scoring it is a weighted mix of those cells. A published performance-curve race folds the mix away beside the course: the wind speeds across the top, the legs actually sailed down the side, and in each cell the share of the rating it carried. A competitor can see that half their windward/leeward rating was the beat and half the run, or which leg of Sunday's course did the damage. No other scoring tool publishes it, because no other scoring tool scores on curves at all.",
+        body: "An ORC certificate is a matrix — an allowance in seconds per mile at every wind speed and every angle to the wind — and every way of scoring it is a weighted mix of those cells. A published performance-curve race folds the mix away beside the course: the certificate's own table, laid out exactly as it is printed, with the share of the rating in each cell instead of the allowance. A competitor holding their certificate can see that half their windward/leeward rating was beat VMG and half run VMG, or which corner of the matrix Sunday's course actually drew on. No other scoring tool publishes it, because no other scoring tool scores on curves at all.",
         note: ON_REQUEST_NOTE,
         shot: {
           src: "/screenshots/features/orc-handicap-mix.webp",
-          alt: "The handicap mix opened under a published race: the certificate's wind speeds across the top, one row per leg, and the share of the rating in each cell",
+          alt: "The handicap mix opened under a published race: the certificate's allowance table with the share of the rating in each cell",
         },
       },
       {
