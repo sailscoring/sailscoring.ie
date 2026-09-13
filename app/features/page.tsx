@@ -454,6 +454,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "orc-recorded-wind",
+        title: "Or score it at the wind that actually blew",
+        body: "Performance curves work the wind back out of the finish times, which is elegant until the course data isn't perfect — marks laid a little short make the whole fleet look faster than its predictions. So the same constructed course can be scored at the wind the race committee measured instead: put the wind speed on each leg and the rating comes out of the course geometry and the observed wind, applied time-on-time or time-on-distance. It's a rating on nobody's certificate — it belongs to that race — and it's the method ORC Scorer publishes as \"ToT - Constructed\". Every figure behind it goes out with the result, and neither Sailwave nor HalSail can score a constructed course at all.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/orc-recorded-wind.webp",
+          alt: "The same course scored two ways on one published page: performance curves with their implied winds above, the recorded wind with its time-on-time ratings below",
+        },
+      },
+      {
         id: "orc-handicap-mix",
         title: "Where the handicap came from",
         body: "An ORC certificate is a matrix — an allowance in seconds per mile at every wind speed and every angle to the wind — and every way of scoring it is a weighted mix of those cells. A published performance-curve race folds the mix away beside the course: the certificate's own table, laid out exactly as it is printed, with the share of the rating in each cell instead of the allowance. A competitor holding their certificate can see that half their windward/leeward rating was beat VMG and half run VMG, or which corner of the matrix Sunday's course actually drew on. No other scoring tool publishes it, because no other scoring tool scores on curves at all.",
