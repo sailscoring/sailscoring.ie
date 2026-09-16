@@ -591,6 +591,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "race-grid",
+        title: "A league's worth of races, one click away",
+        body: "By the end of a league, a page carrying several fleets in full is a long scroll: every fleet's standings, then every fleet's race tables. Turn on the race grid and the page opens on the standings with a grid above them — a row per fleet, a cell per race. Click a cell for that fleet's result on that day. Nothing is left out: the whole series still prints, and a cell's link can be sent to a class captain and lands on the race.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/race-grid.webp",
+          alt: "A grid of fleets and races above a published page's standings",
+        },
+      },
+      {
         id: "per-division-pages",
         title: "Gold, Silver and Bronze, side by side",
         body: "A class that races as one fleet but awards prizes by division can publish both: the overall standings, and a table per division with each ranked among its own boats. Same racing, same scores — the second page is how the prize-giving reads, and it's the page a class will ask you for.",
