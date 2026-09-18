@@ -134,7 +134,25 @@ export default function About() {
           member of Howth Yacht Club. It began as a personal project to scratch
           a real itch — watching experienced scorers struggle with tooling that
           should have been replaced a decade ago — and grew into something more
-          serious.
+          serious in the hands of the people who do the job.
+        </p>
+
+        <p>
+          Scorers and race officers around the country have run real events on
+          it and reported back — the wrong column, the discard the sailing
+          instructions actually intended, the rating step that disagreed with
+          the certificate. Much of what the application gets right, it gets
+          right because one of them found the case where it didn&apos;t. They
+          are credited in{" "}
+          <a
+            href="https://github.com/sailscoring/sailscoring/blob/main/CONTRIBUTORS.md"
+            className="text-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            CONTRIBUTORS.md
+          </a>
+          .
         </p>
 
         <p>
