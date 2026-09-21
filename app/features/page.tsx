@@ -466,11 +466,11 @@ const groups: Group[] = [
       {
         id: "course-builder",
         title: "Courses from the card, not the calculator",
-        body: "Build an ORC constructed course the way the race committee describes it: the club's charted marks come straight from its course card, the line and the laid windward mark go in as coordinates or as a bearing and distance off the line, and a course is a number on the card. Or, when the committee boat hands over legs and no positions — so far, on this bearing, twelve times over — paste that table in and it is a course in its own right, saved once and picked by every start that sails it. A race start picks the course and its legs fill in at the day's wind; every dialog draws the course as you type, so a dropped digit shows before it scores, and the published page carries the drawing. Put the measured wind speed on each leg too and the race can be scored at the wind that actually blew, rather than at one worked back out of the finish times.",
+        body: "Build an ORC constructed course the way the race committee describes it: the club's charted marks come straight from its course card, the line and the laid windward mark go in as coordinates or as a bearing and distance off the line, and a course is a number on the card. Or, when the committee boat hands over legs and no positions — so far, on this bearing, twelve times over — paste that table in and it is a course in its own right, saved once and picked by every start that sails it. A race start picks the course and its legs fill in at the day's wind; every dialog draws the course as you type, so a dropped digit shows before it scores, and the published page carries the drawing. The drawing is on your own water, not a grid: each club's marks come with a chart of the harbour taken from OpenStreetMap and OpenSeaMap, and the course is laid over it wherever it is shown — with the chart inside the published page, so a competitor's phone loads the results and has the picture already. Put the measured wind speed on each leg too and the race can be scored at the wind that actually blew, rather than at one worked back out of the finish times.",
         note: ON_REQUEST_NOTE,
         shot: {
           src: "/screenshots/features/course-builder.webp",
-          alt: "The Courses tab: marks from the club's card and the laid ones, the course built from card J2, and the drawing of them",
+          alt: "The Courses tab: marks from the club's card and the laid ones, the course built from card J2, and the drawing of them on the club's chart",
         },
       },
       {
