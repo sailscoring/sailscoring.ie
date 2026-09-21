@@ -824,6 +824,15 @@ const groups: Group[] = [
         },
       },
       {
+        id: "help-search",
+        title: "Search the manual in the words you use",
+        body: "Type DNC, RDG, TCF, nett, burgee or stopwatch and you land on the section that covers it — every section carries the words a scorer actually reaches for, not just the ones in its title. Sailwave's and HalSail's names for the same thing are in there too, so you can search for what you already call it.",
+        shot: {
+          src: "/screenshots/features/help-search.webp",
+          alt: "The help index narrowed by a search",
+        },
+      },
+      {
         id: "send-feedback",
         title: "A direct line to the builder",
         body: "Send a bug report or a suggestion from inside the app, with the page and browser context attached automatically — and shown to you before it goes.",
