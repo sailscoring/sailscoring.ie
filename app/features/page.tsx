@@ -223,6 +223,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "split-fleet-repechage",
+        title: "A repêchage for the last seats",
+        body: "Give the boats who missed the cut a second chance: pick the repêchage's boats by hand, sail it in one fleet or several, and promote its leaders into the last seats — or, with no time to sail it, promote from the ranking they were cut from. It is ranked on its own races and counts in no series score, and the published standings list the medal fleet, the repêchage and the ranking the boats were cut from, every score once.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/split-fleet-repechage.webp",
+          alt: "Adding a repêchage: the boats who missed the cut, picked by hand",
+        },
+      },
+      {
         id: "world-sailing-id",
         title: "World Sailing Sailor IDs",
         body: "Record each sailor's World Sailing ID — the only identifier that survives chartered boats — carry an organising authority's seed ranking on the entry list that decides the first day's qualifying fleets, and verify every ID against World Sailing's own datafeed, where a mismatch is what catches two transposed digits on an entry form.",
