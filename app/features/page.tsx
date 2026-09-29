@@ -213,6 +213,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "split-fleet-boats",
+        title: "Supplied boats, drawn for each fleet",
+        body: "When the organising authority supplies the boats — two fleets sharing six of them, redrawn for the repêchage and again for the final — enter the draw beside each fleet assignment and every number follows it. Type the boat the race committee hails and it finds the helm sailing it in that race, RaceSense sheets match the same way, and the published results show which boat each helm sailed.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/split-fleet-boats.webp",
+          alt: "A fleet's boats, drawn and entered beside its helms",
+        },
+      },
+      {
         id: "world-sailing-id",
         title: "World Sailing Sailor IDs",
         body: "Record each sailor's World Sailing ID — the only identifier that survives chartered boats — carry an organising authority's seed ranking on the entry list that decides the first day's qualifying fleets, and verify every ID against World Sailing's own datafeed, where a mismatch is what catches two transposed digits on an entry form.",
