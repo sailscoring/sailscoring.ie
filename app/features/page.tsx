@@ -494,6 +494,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "course-import",
+        title: "A course handed over, not typed in",
+        body: "An app that builds courses on the water — a race officer's page that logs where each mark was laid — can hand its course straight to a race start as an ORC constructed course: a small, open document whose fields are the ones ORC's own scoring software uses for a course's legs. Paste it or pick the file, and before anything changes you see what it holds: the legs, the distance, the wind, and the course drawn. The bearings read on the start just as the race committee wrote them, in magnetic, and each leg keeps the committee's own name for it on the published page. A course that says where its first leg starts is drawn on your harbour's chart from that point. The format is documented and free for any app to write.",
+        note: ON_REQUEST_NOTE,
+        shot: {
+          src: "/screenshots/features/course-import.webp",
+          alt: "A race start importing an ORC constructed course: the document, its legs and length, and the course drawn on the club's chart",
+        },
+      },
+      {
         id: "more-systems",
         title: "NHC and VPRS too",
         body: "The RYA National Handicap for Cruisers runs on the standard parameters with per-fleet overrides for tuning experiments, and VPRS scoring pulls TCCs from the club's published list — both there when your racing needs them.",
