@@ -470,7 +470,7 @@ const groups: Group[] = [
         note: ON_REQUEST_NOTE,
         shot: {
           src: "/screenshots/features/orc.webp",
-          alt: "A published ORC performance-curve race: the scoring-wind audit header, implied winds, and the constructed course's legs",
+          alt: "A published ORC performance-curve race: the scoring-wind audit header, implied winds, and the constructed course folded away under Show course",
         },
       },
       {
