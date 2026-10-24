@@ -751,11 +751,16 @@ const groups: Group[] = [
       {
         id: "results-data-file",
         title: "The data behind every page, as a file",
-        body: "Publishing puts the results data itself beside the pages as a documented .sailscoring.json file — every boat, race, finish and rating that produced the standings, linked from every footer and free for anyone to fetch. Club sites, class statisticians, and anyone with an idea can build on it, and it carries only what you published.",
+        body: "Publishing puts the results data itself beside the pages as a documented .sailscoring.json file — every boat, race, finish and rating that produced the standings, linked from every footer and free for anyone to fetch, to check the scoring or re-score it their own way. It carries only what you published.",
         shot: {
           src: "/screenshots/features/results-data-file.webp",
           alt: "The published-page footer linking the results data file",
         },
+      },
+      {
+        id: "results-api",
+        title: "Results your club's apps can rely on",
+        body: "A race-day app, a screen in the clubhouse, a results panel on the club website: each reads your published results through a documented, versioned API, shaped as the pages show them — standings, race results and the entry list. It follows the pages you tick, so pushing a late entry never sends half-entered results to anyone's phone, and a new version never breaks an app without a year's notice.",
       },
       {
         id: "rrs-push",
