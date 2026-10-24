@@ -641,6 +641,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "race-schedule",
+        title: "The season's races, published before the first gun",
+        body: "Generate the season's races and publish the schedule the same evening — before a single entry is in. Every race by date under its month, each start's gun and the fleets on it, and once a race is sailed, a link to its results. It's made from what you already entered to score the series, so there's nothing extra to keep up, and race-day apps read the same schedule through the results API.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/race-schedule.webp",
+          alt: "A published race schedule: races by date under month headings, with start times, fleets and results links",
+        },
+      },
+      {
         id: "page-notes",
         title: "Say the thing the figures can't",
         body: "Sometimes a results page needs a sentence. The race was abandoned and resailed. The finish order was corrected at 16:40. Tuesday's fleet split was worked out before a retirement was applied, so it doesn't reconcile with today's standings — and that's correct, because the sailors raced to the posted assignment. Write a note on any page, or one that goes on every page of the event, and it prints above the results where a reader will actually see it, links and all.",
