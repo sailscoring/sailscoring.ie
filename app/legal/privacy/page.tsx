@@ -19,7 +19,7 @@ export default function Privacy() {
         <h1>Privacy Policy</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 2 September 2026
+          Last updated: 25 October 2026
         </p>
 
         <p>
@@ -216,7 +216,36 @@ export default function Privacy() {
           Clauses as applicable.
         </p>
 
-        <h2>Sub-processors</h2>
+        <h3>Connected apps</h3>
+
+        <p>
+          A scorer can connect an app built by someone else &mdash; a
+          course-plotting page, say, or a club&apos;s race-day app &mdash; so it
+          can work in Sail Scoring on their behalf. Nothing is shared until
+          they do: they sign in to Sail Scoring, choose one workspace, and are
+          shown what the app is asking to do (read the workspace&apos;s series,
+          including competitor details and results; set up races and their
+          courses; publish results) before they allow it. An app can be
+          connected only to a workspace whose owner has had connected apps
+          switched on, and can never do more than the connecting scorer&apos;s
+          own role in that workspace allows. Everything it changes is written
+          to the workspace&apos;s activity log as that scorer&apos;s change,
+          made through the app.
+        </p>
+
+        <p>
+          The app receives the data it reads under its own terms, as a
+          recipient chosen by the scorer and the club, not as our
+          sub-processor; we do not send it anything the scorer did not allow.
+          To connect an app we keep a record of the grant (who, which app,
+          which workspace, what it may do) and the access tokens issued for
+          it, stored hashed. A scorer can disconnect any app from their
+          account page, which ends its access at once, and the workspace owner
+          can ask us to switch connected apps off for the workspace, which cuts
+          every app off from it.
+        </p>
+
+                <h2>Sub-processors</h2>
 
         <p>The complete list of sub-processors we rely on:</p>
 
@@ -272,6 +301,12 @@ export default function Privacy() {
           <li>
             <strong>Activity log:</strong> retained for the life of the
             workspace.
+          </li>
+          <li>
+            <strong>Connected apps:</strong> an app&apos;s access tokens last
+            an hour and its refresh tokens up to 90 days; the record of a grant
+            lasts until the scorer disconnects the app or deletes their
+            account, when it and its tokens are removed.
           </li>
         </ul>
 
