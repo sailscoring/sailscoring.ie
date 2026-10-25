@@ -601,6 +601,15 @@ const groups: Group[] = [
         },
       },
       {
+        id: "public-directory",
+        title: "In good company",
+        body: "Once your club publishes, it joins the public directory of everyone scoring with Sail Scoring: a card with your logo and a line about the club, your latest event, and how much racing you've put online, under a strip of the newest results from every club. Sailors browsing another club's results find yours a click away. Rather not be listed? Switch it off in Workspace settings — your pages stay live either way.",
+        shot: {
+          src: "/screenshots/features/public-directory.webp",
+          alt: "The public directory: the latest results from every club over a card per club",
+        },
+      },
+      {
         id: "combined-pages",
         title: "One page for the whole event",
         body: "Publish several fleets as sections of a single page — an all-fleets Overall page so a multi-class event has one link to hand out, or one class page covering every method it's scored under, optionally replacing the per-fleet pages entirely.",
