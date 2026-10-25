@@ -851,6 +851,15 @@ const groups: Group[] = [
         },
       },
       {
+        id: "connected-apps",
+        title: "Apps that work as you",
+        body: "Connect a course-plotting page or a race-day app and it can set up the day's races, starts and courses, or publish the results, as you: in the one workspace you choose, never beyond your role, with every change credited to you through the app in the activity log. Your account page lists what's connected, and disconnects any of it at once. Available on request while it's in preview.",
+        shot: {
+          src: "/screenshots/features/connected-apps.webp",
+          alt: "Connecting an app: what it asks to do, in the chosen workspace, with Allow and Deny",
+        },
+      },
+      {
         id: "feature-toggles",
         title: "Only the features you use",
         body: "Optional features switch on and off per workspace, so a dinghy club never sees IRC machinery and a keelboat panel never sees youth-regatta tooling. Several arrive with a worked example seeded into your series list, ready to explore and delete.",
@@ -898,12 +907,12 @@ const groups: Group[] = [
       {
         id: "api",
         title: "A real API",
-        body: "A keyed public REST API covers series, competitors, races, results, and publishing — the same surface the app itself uses, so anything the app can do, a script can do.",
+        body: "A documented public API with an OpenAPI description: published standings, race results, entry lists and schedules with no sign-in, and — in preview — calls that let an app read a workspace's series, set up races, starts and courses, and publish, for the people who connect it over OAuth. Within a version it only ever grows, and a breaking change is a new version.",
       },
       {
         id: "cli",
         title: "Scriptable from the terminal",
-        body: "The sailscoring command-line tool drives the API for bulk import, publishing, and reads — season automation without anyone touching a database.",
+        body: "The sailscoring command-line tool drives bulk import, publishing, and reads — season automation without anyone touching a database. Sign it in with a code you approve in your browser, and it works as you in every workspace you belong to.",
       },
       {
         id: "open-source",
