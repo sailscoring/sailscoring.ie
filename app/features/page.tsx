@@ -347,7 +347,7 @@ const groups: Group[] = [
         id: "finish-submissions",
         title: "Hand the sheet over, not the keys",
         body: "The person writing the finishes down is rarely the scorer. Give your race officer or finish-hut volunteer the recorder role and they take the race down on a phone — boat by boat with a tap for the time, or from a spreadsheet — and submit it, without being able to touch the results. You see it waiting on the race, check it boat by boat against what's already there, every unknown sail number named, and apply it or set it aside. They can correct it and send it again until you do, and a race-day app can submit for its user the same way.",
-        note: ON_REQUEST_NOTE,
+        note: OPTIONAL_NOTE,
         shot: {
           src: "/screenshots/features/finish-submissions.webp",
           alt: "Reviewing a finish sheet the committee boat submitted",
