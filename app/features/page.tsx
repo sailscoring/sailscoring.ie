@@ -584,12 +584,12 @@ const groups: Group[] = [
       },
       {
         id: "ftp-upload",
-        title: "Or straight onto the club's own website",
-        body: "Already have a results page on your club's site? Publish to it instead. The same dialog uploads over FTP or FTPS, with a remote path per page — each class, each extra page, the entry list — so results land exactly where your members already look for them, under your own domain, in the file names your site already uses. Tick the pages you want to send; the rest stay as they are.",
+        title: "And onto the club's own website",
+        body: "Already have a results page on your club's site? Every page you publish can land there too, over FTP or FTPS. Give each page its remote path once — each class, each extra page, the entry list — and every publish after that puts results exactly where your members already look for them, under your own domain, in the file names your site already uses. Your site and Sail Scoring always carry the same results.",
         note: ON_REQUEST_NOTE,
         shot: {
           src: "/screenshots/features/ftp-upload.webp",
-          alt: "The publish dialog uploading to a club's own web server, a path per page",
+          alt: "The publish dialog's website tab: a remote path on the club's web server for each page",
         },
       },
       {
