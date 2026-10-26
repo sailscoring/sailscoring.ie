@@ -650,6 +650,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "prizes",
+        title: "The prize list, worked out as the results come in",
+        body: "Enter the Notice of Race's prize list once — Gold 1st, 2nd and 3rd, the first lady helm, the first IRL boat, the club trophy — and every prize names its winners live from the standings. Where the NoR says a boat winning under IRC can't also take the ECHO prize, or that no boat takes more than one, say so: the places move down, and each prize lists the boats it passed over so you can check the call. The prize sheet publishes beside the results, and prints as the sheet the prize-giving runs from — a running order for the compere with a box to tick as each prize is presented, and every winning boat's prizes together for whoever lays out the table.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/prizes.webp",
+          alt: "The Prizes tab: a class's IRC and ECHO podiums, the ECHO prize passing over the IRC prize-winners",
+        },
+      },
+      {
         id: "starters-checklist",
         title: "The entry list, before race one — and on the committee boat",
         body: "Publish the entry list as soon as it settles, weeks before there is a result to read. Where a class races under IRC and a club handicap at once, the page tables itself by class and gives each table a rating column per fleet — every boat on one row, its ratings saying which fleets it is in, and a blank where a certificate is still to come. The same page prints as a starters checklist for the race team: one table per start, sail numbers set large enough to read on a moving boat, and a box beside each to tick as it arrives in the starting area. Anyone with the link can print it — no account needed.",
