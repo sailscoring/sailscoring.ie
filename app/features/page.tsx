@@ -333,6 +333,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "mixed-laps",
+        title: "Send the slow boats round once",
+        body: "A mixed start with handicaps from 940 to 1400 leaves the fast boats waiting on the slow ones. Send the slowest round once while the rest go round twice, write down the laps each boat sailed, and a boat on fewer is scored on the full course — its time scaled up before correction, the way Sailwave and HalSail do it. Works with PY, a fixed TCF, IRC, ECHO and NHC, and the published race table shows the laps.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/mixed-laps.webp",
+          alt: "A finish sheet with a Laps column, the first boat across on one lap of two",
+        },
+      },
+      {
         id: "finish-sheet-import",
         title: "Import the whole sheet",
         body: "When finishes are captured in a spreadsheet on the water, import the race in one go — sail numbers, finish or elapsed times, result codes, row order as crossing order — with a preview of exactly what will land before anything is replaced.",
