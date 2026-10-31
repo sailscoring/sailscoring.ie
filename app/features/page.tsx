@@ -417,10 +417,20 @@ const groups: Group[] = [
       {
         id: "a53-scoring",
         title: "Penalties sized to the turnout",
-        body: "Clubs with variable attendance score DNF and OCS on the boats that came to the start, not the season's whole entry — RRS A5.3, one checkbox, including the variant that scores DNC that way too.",
+        body: "Clubs with variable attendance score DNF and OCS on the boats that came to the start, not the season's whole entry — RRS A5.3, one choice. A club whose instructions score DNC that way too says so in its scoring codes.",
         shot: {
           src: "/screenshots/features/a53-scoring.webp",
           alt: "The A5.3 starting-area scoring options",
+        },
+      },
+      {
+        id: "custom-scoring-codes",
+        title: "The codes your SIs write",
+        body: "The RRS codes stay the default, but sailing instructions add their own — TLE for a boat outside the finishing window, a points penalty for not signing out — and score standard ones differently, such as DNF on the finishers. Say so behind a deliberate first step: each code is marked RRS, Changed or Series, every rule reads back as a sentence to check against the SIs, and the published results list each code that differs with its rule. Codes come across from Sailwave files too.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/custom-scoring-codes.webp",
+          alt: "The Scoring codes dialog with a changed BFD and a series' own TLE",
         },
       },
       {
