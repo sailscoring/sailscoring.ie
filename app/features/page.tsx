@@ -689,6 +689,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "sign-in-out-sheet",
+        title: "The sign-out register, printed for the club office",
+        body: "Where the sailing instructions make helms sign out before launching — and sign back in after — the same entry list prints as the register: sail number, class and helm on each row, a heading for each fleet, and a wide column to sign in. Tick Out or In at the top, so one sheet serves both halves of the day and the two copies are never confused in the file. The office prints a fresh one each race day from the link, no account needed.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/sign-in-out-sheet.webp",
+          alt: "A printed sign in/out sheet: Out and In boxes at the top, fleet headings, and a signature column",
+        },
+      },
+      {
         id: "race-schedule",
         title: "The season's races, published before the first gun",
         body: "Generate the season's races and publish the schedule the same evening — before a single entry is in. Every race by date under its month, each start's gun and the fleets on it, and once a race is sailed, a link to its results. It's made from what you already entered to score the series, so there's nothing extra to keep up, and race-day apps read the same schedule through the results API.",
