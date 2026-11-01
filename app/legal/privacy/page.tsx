@@ -19,7 +19,7 @@ export default function Privacy() {
         <h1>Privacy Policy</h1>
 
         <p style={{ color: "var(--muted)", fontSize: 14 }}>
-          Last updated: 25 October 2026
+          Last updated: 1 November 2026
         </p>
 
         <p>
@@ -69,7 +69,10 @@ export default function Privacy() {
           affiliations, handicap ratings, finish times, results, and the
           published standings that follow. This is, in practice, the same
           information that clubs and class associations have long posted to
-          the web, where it is already openly accessible.
+          the web, where it is already openly accessible. A workspace may also
+          record other details about an entry in fields it names itself, such
+          as a rig size or a sponsor; these are published only where the
+          workspace makes them a column of its results.
         </p>
 
         <p>
