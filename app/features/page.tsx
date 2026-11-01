@@ -709,6 +709,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "custom-results-columns",
+        title: "The columns your organisers expect",
+        body: "Sail Scoring chooses sensible columns from the details you record. When an event wants its own layout — Class before Rank, the sail number headed \"Bib Number\", a title in two languages, the crew only on the standings — set the series' columns: their order, their titles and the tables each is on. Add fields of your own, such as a rig size or a sponsor, and they publish as columns too. A Sailwave file brings its published columns across.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/custom-results-columns.webp",
+          alt: "The Results columns dialog with a custom field and a retitled sail number",
+        },
+      },
+      {
         id: "flexible-publishing",
         title: "Events of every shape",
         body: "Several series can publish into one event folder — the cruisers and the one-designs of the same regatta, each publishing independently. And a one-race trophy publishes as just the race table, not a one-column standings page pretending to be a series.",
