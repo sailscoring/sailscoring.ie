@@ -681,11 +681,11 @@ const groups: Group[] = [
       {
         id: "starters-checklist",
         title: "The entry list, before race one — and on the committee boat",
-        body: "Publish the entry list as soon as it settles, weeks before there is a result to read. Where a class races under IRC and a club handicap at once, the page tables itself by class and gives each table a rating column per fleet — every boat on one row, its ratings saying which fleets it is in, and a blank where a certificate is still to come. The same page prints as a starters checklist for the race team: one table per start, sail numbers set large enough to read on a moving boat, and a box beside each to tick as it arrives in the starting area. Anyone with the link can print it — no account needed.",
+        body: "Publish the entry list as soon as it settles, weeks before there is a result to read. Where a class races under IRC and a club handicap at once, the page tables itself by class and gives each table a rating column per fleet — every boat on one row, its ratings saying which fleets it is in, and a blank where a certificate is still to come. The same page prints as a starters checklist for the race team: one table per start, sail numbers set large enough to read on a moving boat, the helm named beside each for a race team that knows its sailors, and a box to tick as each boat arrives in the starting area. Anyone with the link can print it — no account needed.",
         note: OPTIONAL_NOTE,
         shot: {
           src: "/screenshots/features/starters-checklist.webp",
-          alt: "A printed starters checklist: three class tables with tick boxes",
+          alt: "A printed starters checklist: three class tables with tick boxes and each boat's helm",
         },
       },
       {
