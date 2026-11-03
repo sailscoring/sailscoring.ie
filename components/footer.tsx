@@ -58,8 +58,7 @@ export default function Footer() {
           ))}
         </div>
         <p style={{ margin: 0, fontSize: 12, lineHeight: 1.6, color: "var(--muted)" }}>
-          © {new Date().getFullYear()} Mark McLoughlin. Sail Scoring™ is an
-          unregistered trademark of Mark McLoughlin.
+          Sail Scoring™ © {new Date().getFullYear()} Mark McLoughlin
         </p>
       </div>
     </footer>
