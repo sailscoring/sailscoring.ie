@@ -533,6 +533,16 @@ const groups: Group[] = [
         },
       },
       {
+        id: "ytc",
+        title: "YTC, straight off the certificate",
+        body: "The RYA's Yacht Time Correction is the free rating many cruisers now race on. Sail Scoring pulls each boat's number from the RORC's YTC listing by sail number, spinnaker or white sail per fleet, with provisional certificates flagged. When a boat's certificate is reissued mid-series, the races it already sailed keep the old number. Checked to the second against a club's published YTC results.",
+        note: OPTIONAL_NOTE,
+        shot: {
+          src: "/screenshots/features/update-handicaps-ytc.webp",
+          alt: "Update handicaps on the RORC's YTC listing: a cruiser fleet's numbers proposed, one boat re-rated",
+        },
+      },
+      {
         id: "more-systems",
         title: "NHC and VPRS too",
         body: "The RYA National Handicap for Cruisers runs on the standard parameters with per-fleet overrides for tuning experiments, and VPRS scoring pulls TCCs from the club's published list — both there when your racing needs them.",
